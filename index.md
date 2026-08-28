@@ -6,8 +6,6 @@ description: Pokes to Remind — For Tasks You Can't Forget
 
 # Support
 
-**Pokes to Remind — For Tasks You Can't Forget**
-
 Need help with Due Something? You're in the right place.
 
 ## Frequently Asked Questions

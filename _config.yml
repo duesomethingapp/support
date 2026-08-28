@@ -1,0 +1,6 @@
+title: Due Something
+description: Pokes to Remind — For Tasks You Can't Forget
+theme: jekyll-theme-cayman
+
+# Hides the "Download .zip / .tar.gz" buttons in the hero.
+show_downloads: false

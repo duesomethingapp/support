@@ -41,6 +41,14 @@ Voice dictation uses Apple's Speech Recognition, which needs both microphone and
 ### How do I attach a photo or document to a task?
 Tap the photo icon next to the Notes field in the task editor — you can take a photo, scan a document, or pick from your photo library. Taking photos or scanning needs camera permission (**Settings → Due Something → Camera**). Picking from your library uses Apple's photo picker, which only shares the photos you select — Due Something never sees your library. Tap the thumbnail to view the image full-screen or mark it up.
 
+### Do attachments sync between my devices?
+
+Not yet. Photos, scans, drawings, and files you attach to a task are stored on the device where you added them. Your tasks themselves sync through Apple Reminders as usual, but an attachment added on your iPhone won't appear on your iPad or Mac, and vice versa. Cross-device attachment syncing is planned for a future update.
+
+### Can I add attachments on my Mac?
+
+Yes. In the task editor, tap the paperclip next to Notes to add a photo from your library or choose a file. Take Photo, Scan Document, and Drawing are available on iPhone and iPad only. On the Mac, clicking an attachment opens it in its default app, such as Preview.
+
 ### Reminders aren't syncing across my devices
 Due Something reads and writes directly to Apple's Reminders app, so syncing is handled by Apple's iCloud — not by Due Something.
 

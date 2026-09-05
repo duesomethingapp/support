@@ -20,12 +20,21 @@ description: Pokes to Remind — For Tasks You Can't Forget
 
 ### Why do I keep getting alerts for the same task?
 
-That's Due Something doing its job — overdue tasks are re-notified until you complete them, so nothing slips through. You're in control of how persistent it is:
+That's Due Something doing its job — overdue tasks are re-notified until you complete them, so nothing slips through. Alerts follow the task's own schedule: a task due at 6:00 with a 10 minute interval alerts at 6:00, 6:10, 6:20, and so on, no matter when you last opened the app. You're in control of how persistent it is:
 
 - Change the resend interval, or turn off **Resend Indefinitely** and set a limit, in the app's **Settings → Notifications**.
 - Give an individual task its own schedule with **Custom Snooze** in the task editor.
-- Use a snooze option on the alert to quiet a task for a while, or **Mark as Completed** to finish it.
+- Use a snooze option on the alert to quiet a task for a while. When the snooze ends, the task alerts again and the resends start over from that time.
 - Set **Quiet Hours** in **Settings → Notifications** to hold alerts overnight; anything due during the window is delivered once when it ends.
+- **Mark as Completed** to finish it.
+
+### Why are there so many alerts for one task in Notification Center?
+
+Every alert for an overdue task stays in Notification Center until you act on the task, so the stack is a running tally of how long it has been waiting. Snoozing, completing, deleting, or re-dating the task clears them all at once. Swiping the alerts away doesn't affect the task — it will keep alerting, and the next time the app refreshes it sends a fresh alert so it isn't forgotten.
+
+After a task has been overdue for about half a day, Due Something keeps only the most recent hour of alerts for it while continuing to alert on schedule.
+
+One limit to know about: iOS lets an app schedule about 60 alerts ahead of time, shared across all your tasks. Due Something lines up as many resends as that allows, then tops them up whenever you open the app, act on an alert or widget, or iOS runs a background refresh. If you haven't opened the app in many hours and several tasks are overdue, resends can pause until the next refresh, then pick up on the task's schedule. Opening the app now and then keeps the queue full.
 
 ### Can I snooze a task until I get somewhere?
 

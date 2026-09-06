@@ -32,7 +32,7 @@ That's Due Something doing its job — overdue tasks are re-notified until you c
 
 Every alert for an overdue task stays in Notification Center until you act on the task, so the stack is a running tally of how long it has been waiting. Snoozing, completing, deleting, or re-dating the task clears them all at once. Swiping the alerts away doesn't affect the task — it will keep alerting, and the next time the app refreshes it sends a fresh alert so it isn't forgotten.
 
-After a task has been overdue for about half a day, Due Something keeps only the most recent hour of alerts for it while continuing to alert on schedule.
+After a task has been overdue for about half a day, Due Something keeps only the most recent hour of alerts for it while continuing to alert on schedule. With Quiet Hours on, tasks stay on individually scheduled alerts instead, so the app relies a little more on being opened or refreshed to keep them coming.
 
 One limit to know about: iOS lets an app schedule about 60 alerts ahead of time, shared across all your tasks. Due Something lines up as many resends as that allows, then tops them up whenever you open the app, act on an alert or widget, or iOS runs a background refresh. If you haven't opened the app in many hours and several tasks are overdue, resends can pause until the next refresh, then pick up on the task's schedule. Opening the app now and then keeps the queue full.
 

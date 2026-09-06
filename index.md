@@ -59,9 +59,9 @@ Location reminders rely on Apple's Core Location services, which need permission
 - Arrival/departure alerts can take a minute or two to trigger due to how iOS manages background location — this is expected behavior, not a bug.
 - The same applies to tasks snoozed until a place.
 
-### What is the Daily Digest?
+### What is the Daily Briefing?
 
-One notification each morning at your Default Due Time listing the tasks due that day and how many are overdue. It's skipped on days when nothing is due or overdue. Turn it off in **Settings → Default Due Time → Daily Digest**.
+One notification each morning at your Default Due Time listing the tasks due that day and how many are overdue. It's skipped on days when nothing is due or overdue. Turn it off in **Settings → Default Due Time → Daily Briefing**.
 
 ### Voice dictation isn't working
 

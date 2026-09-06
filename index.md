@@ -20,27 +20,18 @@ description: Pokes to Remind — For Tasks You Can't Forget
 
 ### Why do I keep getting alerts for the same task?
 
-That's Due Something doing its job — overdue tasks are re-notified until you complete them, so nothing slips through. Alerts follow the task's own schedule: a task due at 6:00 with a 10 minute interval alerts at 6:00, 6:10, 6:20, and so on, no matter when you last opened the app. You're in control of how persistent it is:
+That's Due Something doing its job — overdue tasks are re-notified until you complete them, so nothing slips through. You're in control of how persistent it is:
 
 - Change the resend interval, or turn off **Resend Indefinitely** and set a limit, in the app's **Settings → Notifications**.
 - Give an individual task its own schedule with **Custom Snooze** in the task editor.
-- Use a snooze option on the alert to quiet a task for a while. When the snooze ends, the task alerts again and the resends start over from that time.
-- Set **Quiet Hours** in **Settings → Notifications** to hold alerts overnight; anything due during the window is delivered once when it ends.
-- **Mark as Completed** to finish it.
-
-### Why are there so many alerts for one task in Notification Center?
-
-Every alert for an overdue task stays in Notification Center until you act on the task, so the stack is a running tally of how long it has been waiting. Snoozing, completing, deleting, or re-dating the task clears them all at once. Swiping the alerts away doesn't affect the task — it will keep alerting, and the next time the app refreshes it sends a fresh alert so it isn't forgotten.
-
-After a task has been overdue for about half a day, Due Something keeps only the most recent hour of alerts for it while continuing to alert on schedule. With Quiet Hours on, tasks stay on individually scheduled alerts instead, so the app relies a little more on being opened or refreshed to keep them coming.
-
-One limit to know about: iOS lets an app schedule about 60 alerts ahead of time, shared across all your tasks. Due Something lines up as many resends as that allows, then tops them up whenever you open the app, act on an alert or widget, or iOS runs a background refresh. If you haven't opened the app in many hours and several tasks are overdue, resends can pause until the next refresh, then pick up on the task's schedule. Opening the app now and then keeps the queue full.
+- Use a snooze option on the alert to quiet a task for a while, or **Mark as Completed** to finish it.
+- Set **Quiet Hours** in **Settings → Notifications** to hold alerts overnight; anything due during the window is delivered once when it ends. If you use **Stagger Notifications**, those catch-up alerts arrive a few minutes apart instead of all at once.
 
 ### Can I snooze a task until I get somewhere?
 
 Yes. On an overdue task, open the snooze menu and choose **Snooze Location**, then **Until I Arrive** or **Until I Leave**, and pick a saved place. The task moves to a **Waiting for Location** section in Scheduled and stays quiet until you get there, then becomes due right away.
 
-- Set up your places in **Settings → Location-Based**.
+- Set up your places in **Settings → Location-Based**. Your saved places sync to your other devices.
 - Allow Location access — **Always** is best so it works in the background. If Location access is turned off, Due Something tells you when you try to snooze to a place.
 - If you choose **Until I Arrive** for a place you're already at, the task wakes within a few seconds.
 - The **Safety Net** in the same screen re-notifies you after a set time (one hour unless you change it) if you haven't reached the place, so nothing waits forever.
@@ -72,11 +63,11 @@ Voice dictation uses Apple's Speech Recognition, which needs both microphone and
 
 ### How do I attach a photo or document to a task?
 
-Tap the paperclip next to the Notes field in the task editor — you can take a photo, scan a document, pick from your photo library, choose a file, or make a drawing. Taking photos or scanning needs camera permission (**Settings → Due Something → Camera**). Picking from your library uses Apple's photo picker, which only shares the photos you select — Due Something never sees your library. Files up to 25 MB can be attached. Tap an attachment to view it full-screen or mark it up.
+Tap the paperclip next to the Notes field in the task editor — you can take a photo, scan a document, pick from your photo library, choose a file, or make a drawing. Taking photos or scanning needs camera permission (**Settings → Due Something → Camera**). Picking from your library uses Apple's photo picker, which only shares the photos you select — Due Something never sees your library. Files up to 25 MB can be attached. Tap an attachment to view it full-screen or mark it up. A task with attachments shows a small paperclip in its row, with a count when there's more than one.
 
 ### Do attachments sync between my devices?
 
-Not yet. Photos, scans, drawings, and files you attach to a task are stored on the device where you added them. Your tasks themselves sync through Apple Reminders as usual, but an attachment added on your iPhone won't appear on your iPad or Mac, and vice versa. Cross-device attachment syncing is planned for a future update.
+Yes. Photos, scans, drawings, and files you attach on one device appear on your others through your iCloud account. Until a file has finished downloading, the attachment shows a cloud icon and "Waiting for iCloud" — tap it to try again if it's taking a while. Attachments count toward your iCloud storage; if it's full, new attachments stay on the device where you added them until space is freed, and Due Something tells you once.
 
 ### Can I add attachments on my Mac?
 
@@ -84,11 +75,45 @@ Yes. In the task editor, tap the paperclip next to Notes to add a photo from you
 
 ### Reminders aren't syncing across my devices
 
-Due Something reads and writes directly to Apple's Reminders app, so syncing is handled by Apple's iCloud — not by Due Something.
+Due Something reads and writes directly to Apple's Reminders app, so your tasks and lists sync through Apple's iCloud.
 
 - Make sure iCloud is signed in on all your devices (**Settings → [Your Name] → iCloud**).
 - Confirm **Reminders** is toggled on under iCloud settings on each device.
 - Give it a few minutes — iCloud sync isn't always instant.
+
+Everything Due Something adds on top of Reminders — flags, attachments, snooze settings, list icons, and more — syncs separately; see *What does iCloud Sync keep in step?* below.
+
+### What does iCloud Sync keep in step?
+
+Your tasks and lists already sync through Apple Reminders. Due Something's own extras sync through your iCloud account as well, on every device signed in to the same Apple Account:
+
+- Flags, Emergent marks, and muted alerts
+- Custom Snooze settings, snooze history, and location alerts on individual tasks
+- Attachments
+- List icons, hidden lists, sort order, list order, and manual task order
+- Recently Deleted, so you can restore a task from any device
+- Saved places for Snooze Location
+- Your Settings, section by section (see the next question)
+
+It's on automatically when you're signed in to iCloud. Changes usually arrive on your other devices within a few seconds while they're awake, or the next time they open. Everything is stored in your private iCloud account and end-to-end encrypted — we have no access to it.
+
+### Can I choose what syncs?
+
+Yes. Go to **Settings → iCloud Sync**.
+
+- **Sync this Device with iCloud** turns syncing on or off for the device you're holding. When it's off, that device keeps everything it has and stops sending or receiving changes; turn it back on to catch up.
+- The switches below it choose which sections of Settings are kept the same on all your devices: Default View, Default List, Default Due Time, Notifications, Snooze Options, Widgets & Live Activities, Appearance, and Sounds & Haptics. Widgets & Live Activities and Sounds & Haptics start off, since they're about how one device shows and plays things. Turn a section off to let each device keep its own settings for it; turn it back on to share the settings of the device you turn it on from. These choices apply to all your devices.
+- **Restore iCloud Sync Defaults** puts just these switches back to their defaults. It doesn't change your settings themselves.
+
+You can also switch Due Something off entirely under **Settings → [Your Name] → iCloud → Saved to iCloud** on iPhone and iPad, or **System Settings → [Your Name] → iCloud → Saved to iCloud** on the Mac. The app keeps working from its local data.
+
+### A list shared with me is marked view only
+
+If someone shares a list with you as view only, Due Something shows its tasks with a lock next to the list name, and leaves the list out of the choices for new tasks. You can still change its tasks on your device, but those changes stay there — iCloud won't accept them for a list you can't edit — so the app warns you the first time. Ask the list's owner for edit access if you need to make changes that everyone sees.
+
+### My list settings reset after I renamed a list
+
+Due Something keeps a list's icon, sort, and visibility with the list by its name, and carries them over when you rename it — in Due Something, in Reminders, or on another device. The one case it can't tell apart is two lists with the same name in the same account; the second one keeps its settings on each device separately. Give them different names to sync both.
 
 ### Why does the app ask for Contacts access?
 
@@ -96,11 +121,11 @@ This is entirely optional. It's only used to make it faster to set a location re
 
 ### I deleted a reminder by accident
 
-Open Due Something and check the **Recently Deleted** list — deleted reminders are kept there for 30 days before being permanently removed, so you should be able to restore it.
+Open Due Something and check the **Recently Deleted** list — deleted reminders are kept there for 30 days before being permanently removed, so you should be able to restore it. Recently Deleted syncs, so a task deleted on your iPhone can be restored from your Mac, and restoring or permanently deleting it on one device removes it from the list on the others.
 
 ### How do snooze suggestions work?
 
-Due Something learns from your own past snooze choices using a small on-device model. Nothing is uploaded — the suggestions are generated and stored entirely on your device.
+Due Something learns from your own past snooze choices using a small model that runs on your device. The history it learns from — when you snoozed and for how long — syncs between your devices through your iCloud account, end-to-end encrypted, so suggestions are the same everywhere. Nothing is sent to us. Turn it off or clear the history in **Settings → Snooze Options**.
 
 ### What is the Due Something Report?
 
@@ -108,7 +133,7 @@ A snapshot of how you're doing: what's open and overdue, what you completed rece
 
 ### Does Due Something require an account?
 
-No. Due Something doesn't use accounts, logins, or developer-operated servers. Everything runs through Apple's own frameworks (Reminders, iCloud, Location, Speech Recognition) directly on your device.
+No. Due Something doesn't use accounts, logins, or developer-operated servers. Everything runs through Apple's own frameworks (Reminders, iCloud, Location, Speech Recognition) directly on your device and in your own iCloud account.
 
 ### How do I use the widget?
 
@@ -124,7 +149,7 @@ Long-press the Lock Screen, tap **Customize**, tap the widget area, and choose D
 
 ### What is the overdue Live Activity?
 
-When something is overdue, your oldest overdue task appears on the Lock Screen and in the Dynamic Island with a count of how many more are overdue, plus Snooze and Complete buttons. It starts the next time you open the app while something is overdue, and ends when nothing is. Turn it off in **Settings → Widgets & Live Activities → Allow Live Activities**, or for all apps in the Settings app. Live Activities end on their own after eight hours; opening the app starts a fresh one.
+When something is overdue, your oldest overdue task can appear on the Lock Screen and in the Dynamic Island with a count of how many more are overdue, plus Snooze and Complete buttons. It's off until you turn it on in **Settings → Widgets & Live Activities → Allow Live Activities**. Once on, it starts the next time you open the app while something is overdue, and ends when nothing is. Live Activities end on their own after eight hours; opening the app starts a fresh one.
 
 ### Can I add a task from Control Center?
 

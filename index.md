@@ -40,7 +40,7 @@ It's a step above flagged, for the few things that genuinely can't wait. Turn it
 
 Yes. On an overdue task, open the snooze menu and choose **Snooze Location**, then **Until I Arrive** or **Until I Leave**, and pick a saved place. The task moves to a **Waiting for Location** section in Scheduled and stays quiet until you get there, then becomes due right away.
 
-* Set up your places in **Settings → Location-Based**. Your saved places sync to your other devices.
+* Set up your places in **Settings → Snooze → More Options → Location-Based**. Your saved places sync to your other devices.
 * Allow Location access — **Always** is best so it works in the background. If Location access is turned off, Due Something tells you when you try to snooze to a place.
 * If you choose **Until I Arrive** for a place you're already at, the task wakes within a few seconds.
 * The **Safety Net** in the same screen re-notifies you after a set time (one hour unless you change it) if you haven't reached the place, so nothing waits forever.
@@ -48,7 +48,19 @@ Yes. On an overdue task, open the snooze menu and choose **Snooze Location**, th
 
 ### Can I snooze until a place from a notification?
 
-Yes. In **Settings → Location-Based**, turn on **Show in Notifications** and choose one place and direction. That option then appears on every reminder notification and the Lock Screen, above Mark as Completed.
+Yes. In **Settings → Snooze → More Options → Location-Based**, turn on **Show in Notifications** and choose one place and direction. That option then appears on every reminder notification and the Lock Screen, above Mark as Completed.
+
+### Can I snooze a task to a specific date or time?
+
+Yes. Open the snooze menu and choose **New Date/Time**, below Location. Set a date, a time, or both:
+
+* **A date only** — the task moves to that day and keeps its own time of day.
+* **A time only** — the task stays on its own day and moves to that hour.
+* **Both** — the task moves to exactly that moment.
+
+It works on a selection too: select tasks in Scheduled, tap the alarm icon, and choose New Date/Time. Leaving one half out is what makes this useful in bulk — pick a time only, and ten tasks spread across the week each move to that hour on their own day.
+
+A task with a date but no time stays that way when you move it to another date; choosing a time is what gives it one. Turn the option off under **Settings → Snooze → More Options → Snooze to Date/Time**.
 
 ### Why isn't my location reminder triggering?
 
@@ -107,7 +119,7 @@ Yes. In the task editor, tap the paperclip next to Notes to add a photo from you
 Yes. Open the options menu (the **…** button) in a list, in Scheduled, or in Completed, and choose **Select**. Tap the tasks you want and a bar appears at the bottom with what you can do to them:
 
 * **In a list** — flag, move to another list, complete, or delete.
-* **In Scheduled** — snooze (including presets and location), mark Emergent, complete, or delete.
+* **In Scheduled** — snooze (including presets, location, and a new date or time), mark Emergent, complete, or delete.
 * **In Completed** — restore or delete.
 
 Tap the **✕** on that bar to finish. On iPad and Mac, the sidebar button in the top corner turns into an **✕** while you're selecting, which does the same. With a keyboard, **⌘⇧K** completes the selection and **⌘⌫** deletes it. Deletions can be undone from the toast that follows.
@@ -165,7 +177,7 @@ Everything Due Something adds on top of Reminders — flags, attachments, snooze
 
 Your tasks and lists already sync through Apple Reminders. Due Something's own extras sync through your iCloud account as well, on every device signed in to the same Apple Account:
 
-* Flags, Emergent marks, and muted alerts
+* Flags, Emergent marks, and muted alerts on tasks
 * Custom Snooze settings, snooze history, and location alerts on individual tasks
 * Attachments
 * List icons, hidden lists, sort order, list order, and manual task order
@@ -181,7 +193,7 @@ It's on automatically when you're signed in to iCloud. Changes usually arrive on
 Yes. Go to **Settings → iCloud Sync**.
 
 * **Sync this Device with iCloud** turns syncing on or off for the device you're holding. When it's off, that device keeps everything it has and stops sending or receiving changes; turn it back on to catch up.
-* The switches below it choose which sections of Settings are kept the same on all your devices: Default View, Default List, Default Due Time, Notifications, Snooze Options, Widgets & Live Activities, Calendar Connect, Appearance, and Sounds & Haptics. Widgets & Live Activities and Sounds & Haptics start off, since they're about how one device shows and plays things. Turn a section off to let each device keep its own settings for it; turn it back on to share the settings of the device you turn it on from. These choices apply to all your devices.
+* The switches below it choose which sections of Settings are kept the same on all your devices: Default View, Default List, Default Due Time, Notifications, Snooze, Widgets & Live Activities, Calendar Connect, Appearance, and Sounds & Haptics. Widgets & Live Activities and Sounds & Haptics start off, since they're about how one device shows and plays things. Turn a section off to let each device keep its own settings for it; turn it back on to share the settings of the device you turn it on from. These choices apply to all your devices.
 * **Restore iCloud Sync Defaults** puts just these switches back to their defaults. It doesn't change your settings themselves.
 
 You can also switch Due Something off entirely under **Settings → \[Your Name\] → iCloud → Saved to iCloud** on iPhone and iPad, or **System Settings → \[Your Name\] → iCloud → Saved to iCloud** on the Mac. The app keeps working from its local data.
@@ -225,14 +237,14 @@ Open Due Something and check the **Recently Deleted** list — deleted reminders
 
 ### How do snooze suggestions work?
 
-**Settings → Snooze Options → Active Snooze Mechanism** decides what you're offered when you snooze:
+**Settings → Snooze → Set Option** decides what you're offered when you snooze:
 
 * **Static** — the same intervals every time, set by you.
 * **Adaptive** — Short, Medium and Long buckets whose durations drift toward what you actually pick.
 
-Adaptive learns from your own past snooze choices using a small model that runs on your device. The history it learns from — when you snoozed and for how long — syncs between your devices through your iCloud account, end-to-end encrypted, so suggestions are the same everywhere. Nothing is sent to us. Turn it off or clear the history in **Settings → Snooze Options**.
+Adaptive learns from your own past snooze choices using a small model that runs on your device. The history it learns from — when you snoozed and for how long — syncs between your devices through your iCloud account, end-to-end encrypted, so suggestions are the same everywhere. Nothing is sent to us. Turn it off or clear the history in **Settings → Snooze**.
 
-Two more options sit alongside them in the same section: **Smart Presets** (Later Today, This Evening, Tomorrow Morning, This Weekend, Next Week) and **Location-Based**.
+Two more ways to snooze sit under **More Options** in the same section: **Smart Presets** (Later Today, This Evening, Tomorrow Morning, This Weekend, Next Week) and **Location-Based**. **Snooze to Date/Time** is there too — see _Can I snooze a task to a specific date or time?_
 
 ### What is the Due Something Report?
 

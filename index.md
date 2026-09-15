@@ -347,9 +347,23 @@ Yes. Open Control Center, tap **＋** in the top corner, tap **Add a Control**, 
 
 Yes. It shows your Scheduled tasks grouped the same way the iPhone does — Overdue, Today, and on through the week — with the list's color beside each one, and Emergent, flag, and calendar marks where they apply.
 
-- **Swipe left on a task to complete it**, or swipe right to snooze. The snooze options are the same ones your iPhone offers, including Smart Presets.
+- **Swipe a task to act on it.** Out of the box, swiping left completes it and swiping right snoozes it — see _Can I change what swiping does on my Watch?_ to set them to something else, including Delete.
 - **Tap the ＋** at the top to add a task by dictation, scribble, or the keyboard. What you say is read for dates and repeats exactly as typing it into the app would be.
 - Tasks arrive on the Watch through your iCloud account, the same as your other devices. Flags, Emergent marks, and snoozes you set elsewhere show up here too.
+- A task in a list shared with you as view only can't be changed from the Watch, so its swipes are dimmed.
+
+### Can I change what swiping does on my Watch?
+
+Yes, on your iPhone — **Settings → Apple Watch**. The section appears once the Watch app is installed.
+
+**Swipe Options** sets what each direction does. Either one can be **Snooze**, **Complete**, or **Delete**, so you can have the pair you actually use. Delete moves the task to Recently Deleted, the same as deleting it anywhere else, and it's the one action a full swipe won't trigger — you have to tap it, so a long swipe can't throw a task away by accident.
+
+**Snooze Swipe Duration** decides what a snooze swipe does:
+
+- **Open Task** — opens the task so you can pick from the full snooze menu, including Smart Presets. This is how it starts.
+- **Custom…** — snoozes by a fixed amount, anything from 1 minute to 60 hours, without opening anything. Best if you nearly always reach for the same delay.
+
+These settings travel to your Watch over its direct connection to your iPhone rather than through iCloud, so a change lands the next time the two are connected.
 
 ### Why does something I did on my Watch take a moment to appear?
 

@@ -12,39 +12,61 @@ description: Pokes to Remind — For Tasks You Can't Forget
 
 ### Why am I not getting notifications?
 
-* Go to **Settings → Due Something → Notifications** and make sure notifications are allowed.
-* A task needs a due date to alert. Tasks with a date but no time alert at your **Default Due Time** (set in the app's Settings — 8:00 AM unless you've changed it).
-* Focus modes can silence alerts. By default Due Something's alerts are time-sensitive and break through Focus — you can restrict that to only **Emergent** tasks in the app's Settings.
-* iOS limits how many alerts an app can schedule ahead, so opening the app now and then keeps the queue topped up. Due Something also refreshes in the background when iOS allows it.
-* If a task is waiting for a place (see _Can I snooze a task until I get somewhere?_), its alerts are paused until you get there or its safety net runs out.
+- Go to **Settings → Due Something → Notifications** and make sure notifications are allowed.
+- A task needs a due date to alert. Tasks with a date but no time alert at your **Default Due Time** (set in the app's Settings — 8:00 AM unless you've changed it).
+- Focus modes can silence alerts. By default Due Something's alerts are time-sensitive and break through Focus — you can restrict that to only **Emergent** tasks in the app's Settings.
+- iOS limits how many alerts an app can schedule ahead, so opening the app now and then keeps the queue topped up. Due Something also refreshes in the background when iOS allows it.
+- If a task is waiting for a place (see _Can I snooze a task until I get somewhere?_), its alerts are paused until you get there or its safety net runs out.
+- If you set **Create Alarm** on a task, that's a separate thing from its notifications and needs its own permission — see _My alarm didn't go off_.
 
 ### Why do I keep getting alerts for the same task?
 
 That's Due Something doing its job — overdue tasks are re-notified until you complete them, so nothing slips through. You're in control of how persistent it is:
 
-* Change the resend interval, or turn off **Resend Indefinitely** and set a limit, in the app's **Settings → Notifications**.
-* Give an individual task its own schedule with **Custom Snooze** in the task editor.
-* Use a snooze option on the alert to quiet a task for a while, or **Mark as Completed** to finish it.
-* Set **Quiet Hours** in **Settings → Notifications** to hold alerts overnight; anything due during the window is delivered once when it ends. If you use **Stagger Notifications**, those catch-up alerts arrive a few minutes apart instead of all at once.
+- Change the resend interval, or turn off **Resend Indefinitely** and set a limit, in the app's **Settings → Notifications**.
+- Give an individual task its own schedule with **Custom Snooze** in the task editor.
+- Use a snooze option on the alert to quiet a task for a while, or **Mark as Completed** to finish it.
+- Set **Quiet Hours** in **Settings → Notifications** to hold alerts overnight; anything due during the window is delivered once when it ends. If you use **Stagger Notifications**, those catch-up alerts arrive a few minutes apart instead of all at once.
 
 ### What does Emergent mean?
 
 It's a step above flagged, for the few things that genuinely can't wait. Turn it on in the task editor — it's offered once a task has a due date — and the task shows a red exclamation mark in its row.
 
-* Emergent tasks break through **Quiet Hours**, so they still alert while everything else is held.
-* If you've set alerts to break through Focus for **Emergent Only** rather than every task, these are the ones that get through.
-* You can toggle Emergent on several tasks at once from Scheduled — see _Can I change several tasks at once?_
-* Emergent marks sync to your other devices.
+- Emergent tasks break through **Quiet Hours**, so they still alert while everything else is held.
+- If you've set alerts to break through Focus for **Emergent Only** rather than every task, these are the ones that get through.
+- You can toggle Emergent on several tasks at once from Scheduled — see _Can I change several tasks at once?_
+- Emergent marks sync to your other devices.
+
+### What is Create Alarm?
+
+A real alarm — the kind that rings through Silent mode and Focus, with the system alarm sound and a Stop button — for the few tasks a notification isn't enough for.
+
+It's in the task editor, just below **Emergent**, and appears only when a task has a **Date**, a **Time**, and **Emergent** all turned on. Those three together are what makes an alarm appropriate, so it can't be set by accident.
+
+- The alarm rings at the task's due time, including any snooze you've applied.
+- **Stopping the alarm doesn't complete the task.** It still appears in your lists and still gets its normal reminders.
+- A repeating task gets an alarm for its current occurrence; completing it moves the alarm on to the next one.
+- The first time you turn it on, iOS asks for permission to set alarms. This is separate from notification permission.
+- Your ordinary Due Something notifications carry on as well — an alarm is added to them, not a replacement for them.
+
+Alarms are on iPhone and iPad. Your choice is remembered on the Mac and syncs, but macOS has no alarm to set.
+
+### My alarm didn't go off
+
+- Check that the task still has **Date**, **Time**, and **Emergent** on. Turning any of them off clears the alarm.
+- Check alarm permission in **Settings → Due Something**. Each device asks separately, so allowing it on your iPhone doesn't cover your iPad.
+- An alarm has to be in the future. Setting one for a time that has already passed won't ring.
+- If the task saved but the alarm couldn't be set, Due Something says so at the time rather than failing quietly.
 
 ### Can I snooze a task until I get somewhere?
 
 Yes. On an overdue task, open the snooze menu and choose **Snooze Location**, then **Until I Arrive** or **Until I Leave**, and pick a saved place. The task moves to a **Waiting for Location** section in Scheduled and stays quiet until you get there, then becomes due right away.
 
-* Set up your places in **Settings → Snooze → More Options → Location-Based**. Your saved places sync to your other devices.
-* Allow Location access — **Always** is best so it works in the background. If Location access is turned off, Due Something tells you when you try to snooze to a place.
-* If you choose **Until I Arrive** for a place you're already at, the task wakes within a few seconds.
-* The **Safety Net** in the same screen re-notifies you after a set time (one hour unless you change it) if you haven't reached the place, so nothing waits forever.
-* To cancel a wait, tap the location icon on the task and choose **Stop Waiting**. Snoozing the task any other way also ends the wait.
+- Set up your places in **Settings → Snooze → More Options → Location-Based**. Your saved places sync to your other devices.
+- Allow Location access — **Always** is best so it works in the background. If Location access is turned off, Due Something tells you when you try to snooze to a place.
+- If you choose **Until I Arrive** for a place you're already at, the task wakes within a few seconds.
+- The **Safety Net** in the same screen re-notifies you after a set time (one hour unless you change it) if you haven't reached the place, so nothing waits forever.
+- To cancel a wait, tap the location icon on the task and choose **Stop Waiting**. Snoozing the task any other way also ends the wait.
 
 ### Can I snooze until a place from a notification?
 
@@ -54,9 +76,9 @@ Yes. In **Settings → Snooze → More Options → Location-Based**, turn on **S
 
 Yes. Open the snooze menu and choose **New Date/Time**, below Location. Set a date, a time, or both:
 
-* **A date only** — the task moves to that day and keeps its own time of day.
-* **A time only** — the task stays on its own day and moves to that hour.
-* **Both** — the task moves to exactly that moment.
+- **A date only** — the task moves to that day and keeps its own time of day.
+- **A time only** — the task stays on its own day and moves to that hour.
+- **Both** — the task moves to exactly that moment.
 
 It works on a selection too: select tasks in Scheduled, tap the alarm icon, and choose New Date/Time. Leaving one half out is what makes this useful in bulk — pick a time only, and ten tasks spread across the week each move to that hour on their own day.
 
@@ -66,10 +88,10 @@ A task with a date but no time stays that way when you move it to another date; 
 
 Location reminders rely on Apple's Core Location services, which need permission to work reliably:
 
-* Go to **Settings → Privacy & Security → Location Services → Due Something** and make sure it's set to **Always** (not "While Using") if you want reminders to trigger while the app is in the background.
-* Make sure Location Services are turned on system-wide (**Settings → Privacy & Security → Location Services**).
-* Arrival/departure alerts can take a minute or two to trigger due to how iOS manages background location — this is expected behavior, not a bug.
-* The same applies to tasks snoozed until a place.
+- Go to **Settings → Privacy & Security → Location Services → Due Something** and make sure it's set to **Always** (not "While Using") if you want reminders to trigger while the app is in the background.
+- Make sure Location Services are turned on system-wide (**Settings → Privacy & Security → Location Services**).
+- Arrival/departure alerts can take a minute or two to trigger due to how iOS manages background location — this is expected behavior, not a bug.
+- The same applies to tasks snoozed until a place.
 
 ### Does a location alert change when a task is due?
 
@@ -89,18 +111,27 @@ To **Scheduled**, with the task near the top. Tapping the body of an alert never
 
 Your choice, in **Settings → Appearance → Icon Badge**:
 
-* **Overdue** — tasks whose time has passed. This is the default.
-* **Due Today** — everything due today, whether or not its time has come.
-* **All Scheduled** — every task with a due date, however far off.
+- **Overdue** — tasks whose time has passed. This is the default.
+- **Due Today** — everything due today, whether or not its time has come.
+- **All Scheduled** — every task with a due date, however far off.
 
 All three rise and fall as you add and complete tasks. A task waiting on a place isn't counted by any of them, because it has no due moment until the place wakes it.
+
+### Can I use Due Something in light or dark mode?
+
+Yes — **Settings → Appearance → Appearance**:
+
+- **System Default** — follows your device, which is how it starts.
+- **Light Mode** and **Dark Mode** — the app stays as you set it, whatever the rest of the device is doing.
+
+The change takes effect straight away, including on anything already open. It's one of the settings that can be kept the same on all your devices — see _Can I choose what syncs?_
 
 ### Voice dictation isn't working
 
 Voice dictation uses Apple's Speech Recognition, which needs both microphone and speech recognition permissions:
 
-* Go to **Settings → Due Something** and confirm both **Microphone** and **Speech Recognition** are enabled.
-* Speech Recognition also requires an internet connection on some devices, depending on your settings.
+- Go to **Settings → Due Something** and confirm both **Microphone** and **Speech Recognition** are enabled.
+- Speech Recognition also requires an internet connection on some devices, depending on your settings.
 
 ### How do I attach a photo or document to a task?
 
@@ -114,15 +145,46 @@ Yes. Photos, scans, drawings, and files you attach on one device appear on your 
 
 Yes. In the task editor, tap the paperclip next to Notes to add a photo from your library or choose a file. Take Photo, Scan Document, and Drawing are available on iPhone and iPad only. On the Mac, clicking an attachment opens it in its default app, such as Preview.
 
+### Can I share or print a task?
+
+Yes. The share button in the task editor turns a task into a PDF — its title, due date, list, location, repeat, marks, link, notes, and a page for each attachment. From there you can send it, save it to Files, or print it.
+
+You can do it for several tasks at once too: select them in a list, tap the share icon, and choose **Export as Separate PDFs** or **Export as One PDF**, which adds a cover page listing them all.
+
+### What is the Mac menu bar item?
+
+A small panel that lives in your menu bar, so Due Something is one click away without switching apps. The icon shows your overdue count, and clicking it opens Scheduled in miniature — the same grouping, with snooze and complete on each task, and a field at the top for adding one.
+
+All of it is under **Settings → Mac Only**:
+
+- **Menu Bar Item** turns it on and off.
+- **Show Menubar Window** sets a keyboard shortcut that opens it from any app.
+- **Start at Login** opens Due Something when you log in.
+- **Hide Mac App in Dock** keeps the app running in the menu bar alone, with no Dock icon. It needs the menu bar item switched on, since that becomes the only way back in.
+
+### Can I narrow down what Scheduled shows?
+
+Yes. Open the options menu (the **…** button) in Scheduled and use the filters to show only the tasks you want: **Repeating**, **Calendar**, **Flagged**, **Emergent**, **Location**, or **Alarm**. Pick more than one to widen the net. Each matches the mark shown on a task's row, so what you filter by is what you can see.
+
+Turn them all off to go back to everything.
+
 ### Can I change several tasks at once?
 
 Yes. Open the options menu (the **…** button) in a list, in Scheduled, or in Completed, and choose **Select**. Tap the tasks you want and a bar appears at the bottom with what you can do to them:
 
-* **In a list** — flag, move to another list, complete, or delete.
-* **In Scheduled** — snooze (including presets, location, and a new date or time), mark Emergent, complete, or delete.
-* **In Completed** — restore or delete.
+- **In a list** — flag, mark Emergent, set a location alert, move to another list, share as a PDF, complete, or delete.
+- **In Scheduled** — everything above, plus snooze (including Smart Presets, a location, or a new date and time).
+- **In Completed and Recently Deleted** — restore or delete.
 
-Tap the **✕** on that bar to finish. On iPad and Mac, the sidebar button in the top corner turns into an **✕** while you're selecting, which does the same. With a keyboard, **⌘⇧K** completes the selection and **⌘⌫** deletes it. Deletions can be undone from the toast that follows.
+The bar shows five buttons at a time; if you have more than that turned on, slide it sideways to reach the rest.
+
+Choose which buttons appear at all in **Settings → Look & Feel → Batch Select Options**. Turn one off and it leaves every bar that had it. With all of a list's buttons off, Select leaves that list's menu, since there'd be nothing to do with a selection.
+
+Tap the **✕** on the bar to finish. On iPad and Mac, the sidebar button in the top corner turns into an **✕** while you're selecting, which does the same. With a keyboard, **⌘⇧K** completes the selection and **⌘⌫** deletes it. Deletions can be undone from the toast that follows.
+
+### Can I change what swiping a task does?
+
+Yes — **Settings → Look & Feel → Customize Swipe**. Each direction has three positions, and you can put Complete, Flag, Emergent, Location, Snooze, Share, Move, or Delete in any of them, or leave a position empty. The one nearest the row's edge is what a full swipe does.
 
 ### Can I turn my calendar events into tasks?
 
@@ -152,12 +214,17 @@ Six months by default. Change it under **Import Options → Look Ahead**, anywhe
 
 Turn on **Notify Earlier** in Import Options, then set **Move Up Due Time By** — anything from 1 minute to 60 hours. The task falls due that far ahead of the event, so there's time to act on it. Your calendar isn't touched.
 
-* A repeating event carries the same head start into every occurrence.
-* All-day events are left alone. They have no time of day to bring forward, so their tasks fall due at your Default Due Time as usual.
+- A repeating event carries the same head start into every occurrence.
+- All-day events are left alone. They have no time of day to bring forward, so their tasks fall due at your Default Due Time as usual.
 
-### How do I know which calendar a task came from?
+### How do I know a task is connected to a calendar?
 
-An imported task's notes end with a line naming it — _Imported from the "Work" calendar_ — underneath the event's own location and notes.
+A green calendar icon appears next to the task's title, on iPhone, iPad, Mac, and Apple Watch. It means one of two things:
+
+- The task came from a calendar event you imported. Its notes end with a line naming the calendar — _Imported from the "Work" calendar_ — underneath the event's own location and notes.
+- The task writes its own event, through **Add to Calendar** in the task editor.
+
+You can show only these tasks in Scheduled — see _Can I narrow down what Scheduled shows?_
 
 ### Can I put a task on my calendar?
 
@@ -167,9 +234,9 @@ Yes. **Add to Calendar** in the task editor writes the task out as a calendar ev
 
 Due Something reads and writes directly to Apple's Reminders app, so your tasks and lists sync through Apple's iCloud.
 
-* Make sure iCloud is signed in on all your devices (**Settings → \[Your Name\] → iCloud**).
-* Confirm **Reminders** is toggled on under iCloud settings on each device.
-* Give it a few minutes — iCloud sync isn't always instant.
+- Make sure iCloud is signed in on all your devices (**Settings → \[Your Name\] → iCloud**).
+- Confirm **Reminders** is toggled on under iCloud settings on each device.
+- Give it a few minutes — iCloud sync isn't always instant.
 
 Everything Due Something adds on top of Reminders — flags, attachments, snooze settings, list icons, and more — syncs separately; see _What does iCloud Sync keep in step?_ below.
 
@@ -177,14 +244,16 @@ Everything Due Something adds on top of Reminders — flags, attachments, snooze
 
 Your tasks and lists already sync through Apple Reminders. Due Something's own extras sync through your iCloud account as well, on every device signed in to the same Apple Account:
 
-* Flags, Emergent marks, and muted alerts on tasks
-* Custom Snooze settings, snooze history, and location alerts on individual tasks
-* Attachments
-* List icons, hidden lists, sort order, list order, and manual task order
-* Recently Deleted, so you can restore a task from any device
-* Saved places for Snooze Location
-* Which calendar events you've already imported
-* Your Settings, section by section (see the next question)
+- Flags, Emergent marks, and muted alerts on tasks
+- Custom Snooze settings, snooze history, and location alerts on individual tasks
+- Whether a task has an alarm
+- Calendar events a task has written for itself, through Add to Calendar
+- Attachments
+- List icons, hidden lists, sort order, list order, and manual task order
+- Recently Deleted, so you can restore a task from any device
+- Saved places for Snooze Location
+- Which calendar events you've already imported
+- Your Settings, section by section (see the next question)
 
 It's on automatically when you're signed in to iCloud. Changes usually arrive on your other devices within a few seconds while they're awake, or the next time they open. Everything is stored in your private iCloud account and end-to-end encrypted — we have no access to it.
 
@@ -192,9 +261,9 @@ It's on automatically when you're signed in to iCloud. Changes usually arrive on
 
 Yes. Go to **Settings → iCloud Sync**.
 
-* **Sync this Device with iCloud** turns syncing on or off for the device you're holding. When it's off, that device keeps everything it has and stops sending or receiving changes; turn it back on to catch up.
-* The switches below it choose which sections of Settings are kept the same on all your devices: Default View, Default List, Default Due Time, Notifications, Snooze, Widgets & Live Activities, Calendar Connect, Appearance, and Sounds & Haptics. Widgets & Live Activities and Sounds & Haptics start off, since they're about how one device shows and plays things. Turn a section off to let each device keep its own settings for it; turn it back on to share the settings of the device you turn it on from. These choices apply to all your devices.
-* **Restore iCloud Sync Defaults** puts just these switches back to their defaults. It doesn't change your settings themselves.
+- **Sync this Device with iCloud** turns syncing on or off for the device you're holding. When it's off, that device keeps everything it has and stops sending or receiving changes; turn it back on to catch up.
+- The switches below it choose which sections of Settings are kept the same on all your devices: Default View, Default List, Default Due Time, Notifications, Snooze, Widgets & Live Activities, Calendar Connect, Appearance, and Sounds & Haptics. Widgets & Live Activities and Sounds & Haptics start off, since they're about how one device shows and plays things. Turn a section off to let each device keep its own settings for it; turn it back on to share the settings of the device you turn it on from. These choices apply to all your devices.
+- **Restore iCloud Sync Defaults** puts just these switches back to their defaults. It doesn't change your settings themselves.
 
 You can also switch Due Something off entirely under **Settings → \[Your Name\] → iCloud → Saved to iCloud** on iPhone and iPad, or **System Settings → \[Your Name\] → iCloud → Saved to iCloud** on the Mac. The app keeps working from its local data.
 
@@ -210,8 +279,8 @@ Due Something keeps a list's icon, sort, and visibility with the list by its nam
 
 The group at the very top of the sidebar, holding Scheduled to begin with. Put the lists and smart lists you use constantly on it and they stay above everything else.
 
-* On iPhone and iPad, drag a row across the Shelf's line to move it on or off.
-* On the Mac, right-click a row and choose **Move to The Shelf** or **Remove from The Shelf**.
+- On iPhone and iPad, drag a row across the Shelf's line to move it on or off.
+- On the Mac, right-click a row and choose **Move to The Shelf** or **Remove from The Shelf**.
 
 ### How do I reorder my lists?
 
@@ -239,8 +308,8 @@ Open Due Something and check the **Recently Deleted** list — deleted reminders
 
 **Settings → Snooze → Set Option** decides what you're offered when you snooze:
 
-* **Static** — the same intervals every time, set by you.
-* **Adaptive** — Short, Medium and Long buckets whose durations drift toward what you actually pick.
+- **Static** — the same intervals every time, set by you.
+- **Adaptive** — Short, Medium and Long buckets whose durations drift toward what you actually pick.
 
 Adaptive learns from your own past snooze choices using a small model that runs on your device. The history it learns from — when you snoozed and for how long — syncs between your devices through your iCloud account, end-to-end encrypted, so suggestions are the same everywhere. Nothing is sent to us. Turn it off or clear the history in **Settings → Snooze**.
 
@@ -274,6 +343,32 @@ When something is overdue, your oldest overdue task can appear on the Lock Scree
 
 Yes. Open Control Center, tap **＋** in the top corner, tap **Add a Control**, and search for Due Something. The button opens the app straight to a new task. It also works as a Lock Screen button and with the Action button.
 
+### Is there an Apple Watch app?
+
+Yes. It shows your Scheduled tasks grouped the same way the iPhone does — Overdue, Today, and on through the week — with the list's color beside each one, and Emergent, flag, and calendar marks where they apply.
+
+- **Swipe left on a task to complete it**, or swipe right to snooze. The snooze options are the same ones your iPhone offers, including Smart Presets.
+- **Tap the ＋** at the top to add a task by dictation, scribble, or the keyboard. What you say is read for dates and repeats exactly as typing it into the app would be.
+- Tasks arrive on the Watch through your iCloud account, the same as your other devices. Flags, Emergent marks, and snoozes you set elsewhere show up here too.
+
+### Why does something I did on my Watch take a moment to appear?
+
+watchOS doesn't allow apps to change reminders directly — only to read them. So anything you do on the Watch is carried out by your iPhone on its behalf.
+
+- **With your iPhone nearby**, it happens straight away.
+- **Without it** — your iPhone is off, out of range, or its battery has gone — the Watch holds what you did and sends it through iCloud instead. It's applied the next time the two are together or both online. You can carry on completing and snoozing in the meantime.
+
+A task you've completed shows as done on the Watch while it waits, so you're never left wondering whether it took.
+
+### Can I put Due Something on my watch face?
+
+Yes, two complications:
+
+- **Scheduled** — your next task and how many more are due. It comes in the circular, corner, rectangular, and inline shapes, so it fits most faces.
+- **New Task** — a single button that opens straight into dictation.
+
+Long-press your watch face, tap **Edit**, choose a complication slot, and pick Due Something. They refresh as your tasks change and when the Watch wakes them.
+
 ### Can I find tasks with Spotlight?
 
 Yes. Your open tasks appear in iPhone and Mac search. Tapping a result opens it in Due Something. The index lives only on your device.
@@ -282,13 +377,22 @@ Yes. Your open tasks appear in iPhone and Mac search. Tapping a result opens it 
 
 Yes — share a webpage, selected text, a photo, or a file from any app and choose **Due Something** in the share sheet. The page's title becomes the task title, the link is saved in the notes, a shared photo or file becomes an attachment, and any date in shared text is picked up automatically.
 
+### Can I add several tasks at once?
+
+Yes — type them one per line in the title field and each line becomes its own task, sharing the date, time, repeat, list, and notes you've set. Any attachments go on the first one.
+
+Two more shortcuts while you're typing a title:
+
+- **Type a "/" followed by a list name** — for example `Milk /groceries` — and Due Something offers matching lists. Pick one and the task goes there, with the "/" part removed from the title.
+- **Retype something you've done before** and after three letters Due Something offers matching completed tasks from that list. Picking one brings the original task back rather than making a copy, so your history stays in one place instead of filling up with duplicates.
+
 ### Does Due Something work with Siri and Shortcuts?
 
 Yes. Try "Add a task to Due Something" or "What's overdue in Due Something" — phrases need to include the app's name. You can also snooze by voice: "Snooze my overdue tasks in Due Something for 30 minutes", "Snooze everything in Due Something", or "Snooze a task in Due Something", which asks you which task and how long. The Shortcuts app has the full set of actions (add, search, snooze, batch snooze, and more) for building your own automations.
 
 ### Does Due Something have keyboard shortcuts?
 
-On the Mac, and on iPad with a keyboard: **⌘N** new task, **⌘⇧N** new list, **⌘F** search, **⌘1** Overview and **⌘2** through **⌘5** the smart lists, **⌘⇧K** complete the selected tasks, and **⌘⌫** delete them. In the task editor, **⌘↩** saves and **Esc** cancels.
+On the Mac, and on iPad with a keyboard: **⌘N** new task, **⌘⇧N** new list, **⌘F** search, **⌘1** Overview and **⌘2** through **⌘5** the smart lists, **⌘⇧K** complete the selected tasks, and **⌘⌫** delete them. In the task editor, **⌘↩** saves and **Esc** cancels. On the Mac, the View menu also has **⌘+**, **⌘−**, and **⌘0** to make the text bigger, smaller, or actual size.
 
 ### Does Due Something work with VoiceOver and other accessibility features?
 
@@ -300,6 +404,8 @@ Two notes about gestures that are held rather than tapped. Search is normally op
 
 Thank you! Tips are one-time purchases handled entirely by Apple's App Store — Due Something never sees your payment details. If a purchase fails or the Tip Jar shows tips as unavailable, check that you're signed in to the App Store and that in-app purchases aren't restricted in Screen Time. If Apple charged you and something still looks wrong, email us and we'll sort it out.
 
+---
+
 ## Still Need Help?
 
 If your question isn't answered above, reach out and we'll get back to you:
@@ -308,9 +414,13 @@ If your question isn't answered above, reach out and we'll get back to you:
 
 When reporting an issue, it helps to include:
 
-* Your device model and iOS version
-* What you expected to happen vs. what actually happened
-* Steps to reproduce the issue, if possible
+- Your device model and iOS version
+- What you expected to happen vs. what actually happened
+- Steps to reproduce the issue, if possible
+
+**Settings → Diagnostics** shows what the app is currently working through and any errors from this session. If something has gone wrong, a look at that screen is often the quickest way to tell us what.
+
+---
 
 ## Privacy
 

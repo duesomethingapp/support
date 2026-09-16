@@ -12,7 +12,8 @@ description: Pokes to Remind — For Tasks You Can't Forget
 
 ### Why am I not getting notifications?
 
-- Go to **Settings → Due Something → Notifications** and make sure notifications are allowed.
+- Start at **Settings → Notifications → Notification Status** in the app. It tells you what's scheduled and, if the system won't show Due Something's alerts, exactly what's stopping them — with a button that takes you to the setting that fixes it. A warning triangle appears on the row when that's the case, so you don't have to go looking. See _How do I check my notifications are working?_
+- Or go to **Settings → Due Something → Notifications** on your device and make sure notifications are allowed.
 - A task needs a due date to alert. Tasks with a date but no time alert at your **Default Due Time** (set in the app's Settings — 8:00 AM unless you've changed it).
 - Focus modes can silence alerts. By default Due Something's alerts are time-sensitive and break through Focus — you can restrict that to only **Emergent** tasks in the app's Settings.
 - iOS limits how many alerts an app can schedule ahead, so opening the app now and then keeps the queue topped up. Due Something also refreshes in the background when iOS allows it.
@@ -98,6 +99,24 @@ Location reminders rely on Apple's Core Location services, which need permission
 Yes. A task with a location alert comes due at its due date **or** when you reach the place, whichever happens first. Arriving early makes it due there and then; if you never go, the original due date still stands. Nothing is lost either way.
 
 This is different from **Snooze Location** above, where a task has no due moment at all until the place — or its safety net — wakes it.
+
+### How do I check my notifications are working?
+
+**Settings → Notifications → Notification Status** answers it in one place. It reads what's actually set up on your device rather than what the app intended, so what you see is what will happen:
+
+- **Next Alert** — when the next one is due, and which task it's for.
+- **Alerts Queued** — how many are set up out of the number iOS allows an app to hold at once.
+- **Tasks Covered** — how many of your dated tasks have an alert waiting. If it's fewer than all of them, that's normal: iOS only holds so many at a time, so the furthest away are set up as the nearer ones go off. Nothing is lost.
+- **Quiet Hours** — whether it's on, and whether you're inside the window now.
+- **Last Topped Up** — when Due Something last rebuilt the queue. **Refresh Notifications** rebuilds it immediately.
+
+If the system won't show alerts at all — notifications turned off, never allowed, delivered quietly, or allowed with **Banners** and the **Lock Screen** switched off — a warning at the top of that screen says which, and takes you to the setting that fixes it.
+
+### If I travel, do my alerts move?
+
+A task with a time doesn't move. Due at 3:00 PM means that exact moment wherever you are, so flying somewhere doesn't shift it forward or back by the time difference.
+
+Tasks with a date but no time work the other way, because your **Default Due Time** is a time of day rather than a fixed moment. Those follow the clock where you are — you'll get them at 8:00 AM local — from the next time you open the app after landing. The **Daily Briefing** is the same kind of thing, and follows the local clock straight away.
 
 ### What is the Daily Briefing?
 
@@ -352,6 +371,25 @@ Yes. It shows your Scheduled tasks grouped the same way the iPhone does — Over
 - Tasks arrive on the Watch through your iCloud account, the same as your other devices. Flags, Emergent marks, and snoozes you set elsewhere show up here too.
 - A task in a list shared with you as view only can't be changed from the Watch, so its swipes are dimmed.
 
+### I added a task on my Watch with my iPhone away. Will it still alert me?
+
+Yes. When you add a task on the Watch, the Watch works out when it's due from what you said and sets its own alert for that time, there and then. That alert lives in watchOS, so it arrives at the right moment whether or not your iPhone is reachable — out of range, switched off, or left at home for the day.
+
+A task with a time you gave it appears straight away among the others due then, with a small red **Apple Watch** mark beside its name. That mark means it lives on your Watch and nowhere else yet; it goes as soon as your iPhone has the task. Until then you can't complete or snooze it — there's nothing to act on — but you can swipe it to cancel.
+
+A task with no time it could work out has nowhere to sit, so it waits in **Queued for iPhone** instead, with a line saying whether the Watch alert is set. If watchOS won't show alerts — turned off, or set to deliver quietly — that line says so rather than claiming it's scheduled, and a row only says more when there is more to say: that your iPhone has it and is syncing, or that it couldn't be saved at all.
+
+Once your iPhone has the task and has set up its own alerts for it, the Watch hands over and drops its stand-in, so you're never told twice.
+
+Two things it can't do:
+
+- **A task with no time it can recognise** gets no Watch alert — there's no moment to set one for. The row says so.
+- **A repeating task** is left for your iPhone to work out, so that its rule is read properly rather than guessed at.
+
+### Can I cancel a task I added on my Watch?
+
+Yes. Swipe the row — wherever it appears, whether among your other tasks or in **Queued for iPhone** — and tap **Cancel**. The task is withdrawn, its Watch alert goes with it, and no device picks it up later. If your iPhone had already saved it in the moment before you swiped, the cancel turns into a delete, so it ends up in Recently Deleted like anything else you delete.
+
 ### Can I change what swiping does on my Watch?
 
 Yes, on your iPhone — **Settings → Apple Watch**. The section appears once the Watch app is installed.
@@ -372,7 +410,7 @@ watchOS doesn't allow apps to change reminders directly — only to read them. S
 - **With your iPhone nearby**, it happens straight away.
 - **Without it** — your iPhone is off, out of range, or its battery has gone — the Watch holds what you did and sends it through iCloud instead. It's applied the next time the two are together or both online. You can carry on completing and snoozing in the meantime.
 
-A task you've completed shows as done on the Watch while it waits, so you're never left wondering whether it took.
+A task you've completed shows as done on the Watch while it waits, so you're never left wondering whether it took. A snooze keeps the time the Watch showed you as well — if you snooze something for 10 minutes at 2:00 and your iPhone only hears about it at 2:08, the task is still due at 2:10, not pushed out to 2:18.
 
 ### Can I put Due Something on my watch face?
 
@@ -431,8 +469,6 @@ When reporting an issue, it helps to include:
 - Your device model and iOS version
 - What you expected to happen vs. what actually happened
 - Steps to reproduce the issue, if possible
-
-**Settings → Diagnostics** shows what the app is currently working through and any errors from this session. If something has gone wrong, a look at that screen is often the quickest way to tell us what.
 
 ---
 

@@ -16,7 +16,7 @@ description: Pokes to Remind — For Tasks You Can't Forget
 - Or go to **Settings → Due Something → Notifications** on your device and make sure notifications are allowed.
 - A task needs a due date to alert. Tasks with a date but no time alert at your **Default Due Time** (set in the app's Settings — 8:00 AM unless you've changed it).
 - Focus modes can silence alerts. By default Due Something's alerts are time-sensitive and break through Focus — you can restrict that to only **Emergent** tasks in the app's Settings.
-- iOS limits how many alerts an app can schedule ahead, so opening the app now and then keeps the queue topped up. Due Something also refreshes in the background when iOS allows it.
+- iOS limits how many alerts an app can schedule ahead, so opening the app now and then keeps the queue topped up. Due Something also refreshes in the background when iOS allows it — if **Background App Refresh** is switched off for Due Something, or Low Power Mode is on, the alerts already scheduled still arrive but no new ones are added until you open the app. Notification Status tells you when that's what's happening.
 - If a task is waiting for a place (see _Can I snooze a task until I get somewhere?_), its alerts are paused until you get there or its safety net runs out.
 - If you set **Create Alarm** on a task, that's a separate thing from its notifications and needs its own permission — see _My alarm didn't go off_.
 
@@ -27,13 +27,12 @@ That's Due Something doing its job — overdue tasks are re-notified until you c
 - Change the resend interval, or turn off **Resend Indefinitely** and set a limit, in the app's **Settings → Notifications**.
 - Give an individual task its own schedule with **Custom Snooze** in the task editor.
 - Use a snooze option on the alert to quiet a task for a while, or **Mark as Completed** to finish it.
-- Set **Quiet Hours** in **Settings → Notifications** to hold alerts overnight; anything due during the window is delivered once when it ends. If you use **Stagger Notifications**, those catch-up alerts arrive a few minutes apart instead of all at once.
+- To keep nights quiet, use a Focus or Scheduled Summary in iOS **Settings → Notifications**; Due Something's alerts respect them like any other app's.
 
 ### What does Emergent mean?
 
 It's a step above flagged, for the few things that genuinely can't wait. Turn it on in the task editor — it's offered once a task has a due date — and the task shows a red exclamation mark in its row.
 
-- Emergent tasks break through **Quiet Hours**, so they still alert while everything else is held.
 - If you've set alerts to break through Focus for **Emergent Only** rather than every task, these are the ones that get through.
 - You can toggle Emergent on several tasks at once from Scheduled — see _Can I change several tasks at once?_
 - Emergent marks sync to your other devices.
@@ -107,7 +106,6 @@ This is different from **Snooze Location** above, where a task has no due moment
 - **Next Alert** — when the next one is due, and which task it's for.
 - **Alerts Queued** — how many are set up out of the number iOS allows an app to hold at once.
 - **Tasks Covered** — how many of your dated tasks have an alert waiting. If it's fewer than all of them, that's normal: iOS only holds so many at a time, so the furthest away are set up as the nearer ones go off. Nothing is lost.
-- **Quiet Hours** — whether it's on, and whether you're inside the window now.
 - **Last Topped Up** — when Due Something last rebuilt the queue. **Refresh Notifications** rebuilds it immediately.
 
 If the system won't show alerts at all — notifications turned off, never allowed, delivered quietly, or allowed with **Banners** and the **Lock Screen** switched off — a warning at the top of that screen says which, and takes you to the setting that fixes it.
@@ -152,6 +150,14 @@ Voice dictation uses Apple's Speech Recognition, which needs both microphone and
 - Go to **Settings → Due Something** and confirm both **Microphone** and **Speech Recognition** are enabled.
 - Speech Recognition also requires an internet connection on some devices, depending on your settings.
 
+### Can I go straight from one task to another?
+
+Yes. With a task open, tap another one in the list behind it and Due Something saves the first and opens the second in its place. The task you're editing is highlighted in the list, so you can see where you are.
+
+The list stays live while the editor is open — you can scroll it to find what you want next.
+
+If the first task can't be saved — an empty title, a permission still to grant, or a conflict to review — it stays open so nothing is lost. A task you haven't changed, or one in a list you can only read, switches without writing anything.
+
 ### How do I attach a photo or document to a task?
 
 Tap the paperclip next to the Notes field in the task editor — you can take a photo, scan a document, pick from your photo library, choose a file, or make a drawing. Taking photos or scanning needs camera permission (**Settings → Due Something → Camera**). Picking from your library uses Apple's photo picker, which only shares the photos you select — Due Something never sees your library. Files up to 25 MB can be attached. Tap an attachment to view it full-screen or mark it up. A task with attachments shows a small paperclip in its row, with a count when there's more than one.
@@ -191,13 +197,16 @@ Turn them all off to go back to everything.
 
 Yes. Open the options menu (the **…** button) in a list, in Scheduled, or in Completed, and choose **Select**. Tap the tasks you want and a bar appears at the bottom with what you can do to them:
 
-- **In a list** — flag, mark Emergent, set a location alert, move to another list, share as a PDF, complete, or delete.
-- **In Scheduled** — everything above, plus snooze (including Smart Presets, a location, or a new date and time).
+- **In any list, and in Scheduled** — snooze (including Smart Presets, a location, or a new date and time), flag, mark Emergent, set a location alert, move to another list, share as a PDF, complete, or delete.
 - **In Completed and Recently Deleted** — restore or delete.
+
+Snoozing a task that has no date gives it one — the time you snooze it to. Marking an undated task **Emergent** gives it the current date and time, since Emergent only means anything against a deadline. A task that already has a date keeps it.
 
 The bar shows five buttons at a time; if you have more than that turned on, slide it sideways to reach the rest.
 
 Choose which buttons appear at all in **Settings → Look & Feel → Batch Select Options**. Turn one off and it leaves every bar that had it. With all of a list's buttons off, Select leaves that list's menu, since there'd be nothing to do with a selection.
+
+Tap **Edit** on that screen to drag the buttons into the order you want instead; the checkmark saves it. The order you set is used in every selection bar, whichever way round it's drawn.
 
 Tap the **✕** on the bar to finish. On iPad and Mac, the sidebar button in the top corner turns into an **✕** while you're selecting, which does the same. With a keyboard, **⌘⇧K** completes the selection and **⌘⌫** deletes it. Deletions can be undone from the toast that follows.
 
@@ -300,6 +309,45 @@ The group at the very top of the sidebar, holding Scheduled to begin with. Put t
 
 - On iPhone and iPad, drag a row across the Shelf's line to move it on or off.
 - On the Mac, right-click a row and choose **Move to The Shelf** or **Remove from The Shelf**.
+
+### Can I show two lists at once?
+
+Yes, on iPad, Mac, and iPhone Duo. Open a list's options menu (the **…** button) and choose **Open Multi-List**, then pick the second list. They sit side by side in landscape and one above the other in portrait.
+
+- The list you're working in is the active one. Tap an inactive list's name to switch to it.
+- Tap the **active** list's name for a menu of everything you could put there instead. The list already open on the other side is greyed out, so you can't have the same one twice.
+- The **✕** next to the active name closes that list and keeps the other.
+- **Select** works across both at once — choose tasks on either side and the bar acts on all of them.
+- Drag a task from one list to the other to move it.
+
+Rotating, folding, or resizing the window keeps both lists. If the window becomes too small for two, the one you were working in stays and the other closes.
+
+### Can I save a pair of lists?
+
+Yes. With two lists open, choose **Saved Layouts → Save Current Layout** from the options menu and give it a name. It remembers both lists and which one you were working in.
+
+Reopen it any time from **Multi-List → Saved Layouts**. You can rename them, drag them into the order you want, and delete ones you've finished with.
+
+If a list in a saved layout has since been deleted, opening it asks you which list to use instead rather than quietly picking one.
+
+Layouts sync across your devices.
+
+### Can I make my own Smart List?
+
+Yes. Start a new list as usual, then turn on **Smart List** under the name. That turns it into a saved view — it looks through the tasks you already have rather than becoming somewhere tasks live, so nothing is copied or duplicated.
+
+Tap **Edit Rules** to say what it should show:
+
+- **Source Lists** — which lists to look in.
+- **Due Date** — overdue, today, the next 7 or 30 days, anything with a date, or anything without one.
+- **Completion** — unfinished tasks, finished ones, or both.
+- **Flagged**, **Emergent**, **Repeating**, **Location**, **Alarm**, and **Calendar Association** — the same marks you can filter Scheduled by.
+
+Choose whether a task has to match **every** rule or just **any** of them. You can also give it an icon and a colour, sort it by due date or title, hide its header, and pick which real list new tasks added from it should go to.
+
+Smart lists of your own sit in the sidebar with everything else — reorder them, put them on the Shelf, hide them, or open one in Multi-List. They sync across your devices.
+
+Deleting one removes the view, never the tasks in it.
 
 ### How do I reorder my lists?
 
@@ -421,6 +469,17 @@ Yes, two complications:
 
 Long-press your watch face, tap **Edit**, choose a complication slot, and pick Due Something. They refresh as your tasks change and when the Watch wakes them.
 
+### Does Due Something work on iPhone Duo?
+
+Yes, in every pose.
+
+- **Unfolded** — the full inner display, with Multi-List available in both landscape and portrait.
+- **Bent in landscape** — open a task or a list and its editor appears on the far half, with the list you were in on the near one, so you can see both.
+- **The front display**, and **a single half** of the unfolded screen, both work as an ordinary iPhone would.
+- The lists drawer opens from the left, and swiping from the edge opens it, the same as on any other iPhone.
+
+Folding to a screen too small for two lists keeps the one you were working in and closes the other. Unfold again and you can reopen it, or use a saved layout.
+
 ### Can I find tasks with Spotlight?
 
 Yes. Your open tasks appear in iPhone and Mac search. Tapping a result opens it in Due Something. The index lives only on your device.
@@ -428,6 +487,21 @@ Yes. Your open tasks appear in iPhone and Mac search. Tapping a result opens it 
 ### Can I add tasks from other apps?
 
 Yes — share a webpage, selected text, a photo, or a file from any app and choose **Due Something** in the share sheet. The page's title becomes the task title, the link is saved in the notes, a shared photo or file becomes an attachment, and any date in shared text is picked up automatically.
+
+### Can I drag something in from another app?
+
+Yes. Drag text, a link, or one or more files onto a list and Due Something starts a task from them:
+
+- The first line of dropped text becomes the title and the rest becomes notes.
+- A link is kept in the notes.
+- Files come in as attachments. Drop several documents together and you get one task carrying all of them.
+- Either side of Multi-List will take a drop; the one under your finger highlights.
+
+The task opens in the editor with everything filled in, so **nothing is saved until you tap Save**. Cancel and the copied files are discarded.
+
+Files are limited to 25 MB each, and one drop can carry up to 20 items and 100 MB in total. If something in the drop can't be read, the whole import stops and tells you, rather than quietly leaving part of it out.
+
+Read-only lists don't accept drops.
 
 ### Can I add several tasks at once?
 

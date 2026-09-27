@@ -26,7 +26,7 @@ That's Due Something doing its job — overdue tasks are re-notified until you c
 
 - Change the resend interval, or turn off **Resend Indefinitely** and set a limit, in the app's **Settings → Notifications**.
 - Give an individual task its own schedule with **Custom Snooze** in the task editor.
-- Use a snooze option on the alert to quiet a task for a while, or **Mark as Completed** to finish it.
+- Use a snooze option on the alert to quiet a task for a while, or **Mark Complete** to finish it.
 - To keep nights quiet, use a Focus or Scheduled Summary in iOS **Settings → Notifications**; Due Something's alerts respect them like any other app's.
 
 ### What does Emergent mean?
@@ -63,6 +63,7 @@ Alarms are on iPhone and iPad. Your choice is remembered on the Mac and syncs, b
 Yes. On an overdue task, open the snooze menu and choose **Snooze Location**, then **Until I Arrive** or **Until I Leave**, and pick a saved place. The task moves to a **Waiting for Location** section in Scheduled and stays quiet until you get there, then becomes due right away.
 
 - Set up your places in **Settings → Snooze → More Options → Location-Based**. Your saved places sync to your other devices.
+- You can also add one there and then: **New Location…** appears under both **Until I Arrive** and **Until I Leave**, and opens the map so you can pick a place without leaving the task. It's saved with your other places when you confirm it, and the task starts waiting for it straight away. It's in the batch snooze menu and the swipe snooze menu too.
 - Allow Location access — **Always** is best so it works in the background. If Location access is turned off, Due Something tells you when you try to snooze to a place.
 - If you choose **Until I Arrive** for a place you're already at, the task wakes within a few seconds.
 - The **Safety Net** in the same screen re-notifies you after a set time (one hour unless you change it) if you haven't reached the place, so nothing waits forever.
@@ -70,7 +71,7 @@ Yes. On an overdue task, open the snooze menu and choose **Snooze Location**, th
 
 ### Can I snooze until a place from a notification?
 
-Yes. In **Settings → Snooze → More Options → Location-Based**, turn on **Show in Notifications** and choose one place and direction. That option then appears on every reminder notification and the Lock Screen, above Mark as Completed.
+Yes. In **Settings → Snooze → More Options → Location-Based**, turn on **Show in Notifications** and choose one place and direction. That option then appears on every reminder notification and the Lock Screen, above Mark Complete.
 
 ### Can I snooze a task to a specific date or time?
 
@@ -187,11 +188,13 @@ All of it is under **Settings → Mac Only**:
 - **Start at Login** opens Due Something when you log in.
 - **Hide Mac App in Dock** keeps the app running in the menu bar alone, with no Dock icon. It needs the menu bar item switched on, since that becomes the only way back in.
 
-### Can I narrow down what Scheduled shows?
+### Can I narrow down what a list shows?
 
-Yes. Open the options menu (the **…** button) in Scheduled and use the filters to show only the tasks you want: **Repeating**, **Calendar**, **Flagged**, **Emergent**, **Location**, or **Alarm**. Pick more than one to widen the net. Each matches the mark shown on a task's row, so what you filter by is what you can see.
+Yes, in any of them. Open the options menu (the **…** button) and use the filters to show only the tasks you want: **Repeating Task**, **Calendar**, **Links**, **Flagged**, **Emergent**, **Location**, or **Alarm**. Pick more than one to widen the net. Each matches the mark shown on a task's row, so what you filter by is what you can see.
 
-Turn them all off to go back to everything.
+This works in Scheduled, in any of your own lists, in All, in Completed, and in Recently Deleted. Deleted tasks are matched on what was saved with them when they were deleted.
+
+Turn them all off to go back to everything. Switching lists clears them.
 
 ### Can I change several tasks at once?
 
@@ -229,6 +232,17 @@ Only for Calendar Connect — reading events so you can import them, and writing
 ### How far ahead do the events go?
 
 Six months by default. Change it under **Import Options → Look Ahead**, anywhere from one month to a year. Events that have already passed are never offered.
+
+### What happens to a monthly task on the 31st?
+
+When you set a task to repeat monthly on the **29th, 30th, or 31st**, Due Something asks what to do in a month that hasn't got that date, under **If Day Is Missing**:
+
+- **Last Day** — it comes due on the last day the month does have, so a task on the 31st arrives on the 30th in April and the 28th in February.
+- **Skip Month** — that month is passed over and the next one with the date is used.
+
+New repeats use **Last Day**. Tasks you set up before this choice existed keep behaving as they did, and a task already set to the last day of the month is unchanged.
+
+The choice travels with the task, so it holds in Reminders, on your other devices, and if the task is archived and restored.
 
 ### A repeating event became a repeating task. Can I get just one date?
 
@@ -310,6 +324,30 @@ The group at the very top of the sidebar, holding Scheduled to begin with. Put t
 - On iPhone and iPad, drag a row across the Shelf's line to move it on or off.
 - On the Mac, right-click a row and choose **Move to The Shelf** or **Remove from The Shelf**.
 
+### Can I make a template out of a list?
+
+Yes. Choose **Create Template** from a list's options menu and it saves the list's name, color, icon, and the tasks in it — their titles, notes, links, priority, and flags. Dates, alarms, and locations aren't part of a template, since those belong to the occasion rather than the shape of the list.
+
+To use one, start a new list and pick the template under **List Type**; the tasks arrive with it.
+
+Manage them in **Settings → Tasks & Lists → List Templates**. You can rename a template's tasks, add and remove them, drag them into a different order, and duplicate one. Templates sync across your devices.
+
+A template is a snapshot, not a link — changing the list it came from doesn't change the template, and using a template doesn't tie the new list to it.
+
+### Can Due Something remind me to review a list?
+
+Yes. Open **List Info** (or set it while creating the list), and under **Review List** turn on **Review Reminder**. Choose a time and how often — daily, weekly on the days you pick, or monthly on a date.
+
+- List Info then shows when you last reviewed it — **Never** to begin with — and when the next reminder is due.
+- **Mark Reviewed** is in the list's options menu, and updates the last-reviewed date.
+- Tapping the reminder opens that list.
+
+It works for your own lists and for Scheduled, Completed, Recently Deleted, and smart lists you've made.
+
+For a monthly review on the **29th, 30th, or 31st**, you're asked what should happen in a month without that date: **Last Day** uses the last day the month does have, and **Skip Month** passes it over. New reminders use Last Day unless you change it.
+
+Review reminders stay on the device you set them on — they aren't synced, so set them where you want them.
+
 ### Can I show two lists at once?
 
 Yes, on iPad, Mac, and iPhone Duo. Open a list's options menu (the **…** button) and choose **Open Multi-List**, then pick the second list. They sit side by side in landscape and one above the other in portrait.
@@ -343,7 +381,7 @@ Tap **Edit Rules** to say what it should show:
 - **Completion** — unfinished tasks, finished ones, or both.
 - **Flagged**, **Emergent**, **Repeating**, **Location**, **Alarm**, and **Calendar Association** — the same marks you can filter Scheduled by.
 
-Choose whether a task has to match **every** rule or just **any** of them. You can also give it an icon and a colour, sort it by due date or title, hide its header, and pick which real list new tasks added from it should go to.
+Choose whether a task has to match **every** rule or just **any** of them. You can also give it an icon and a color, sort it by due date or title, hide its header, and pick which real list new tasks added from it should go to.
 
 Smart lists of your own sit in the sidebar with everything else — reorder them, put them on the Shelf, hide them, or open one in Multi-List. They sync across your devices.
 
@@ -358,6 +396,14 @@ On iPhone, open the sidebar's options menu and choose **Reorder Lists**. On iPad
 Pull down at the top of the sidebar and hold. A **＋** fills in, and letting go opens the new-list sheet. On iPhone, use **New List** in the sidebar's options menu; on the Mac, the **＋** next to "My Lists".
 
 If you use VoiceOver or Switch Control, a **＋** button appears at the top of the iPad sidebar instead, since pull-and-hold is a timed gesture.
+
+### Can I give a list its own color?
+
+Yes — **Customize** in any list's options menu. **Header Color** colors the large title at the top, and **List Color** colors the list itself; each is remembered per list and you can set either, both, or neither. **Hide Header** lives in the same place.
+
+It's available in your own lists, in Scheduled, Completed, Recently Deleted, and smart lists you've made. In lists that gather tasks from several places, a small dot in each task's source color shows where it came from.
+
+These are display choices on the device you make them on; they don't change the list in Reminders.
 
 ### Can I hide a list's name at the top of the screen?
 

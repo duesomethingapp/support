@@ -34,7 +34,7 @@ That's Due Something doing its job — overdue tasks are re-notified until you c
 It's a step above flagged, for the few things that genuinely can't wait. Turn it on in the task editor — it's offered once a task has a due date — and the task shows a red exclamation mark in its row.
 
 - If you've set alerts to break through Focus for **Emergent Only** rather than every task, these are the ones that get through.
-- You can toggle Emergent on several tasks at once from Scheduled — see _Can I change several tasks at once?_
+- You can toggle Emergent on several tasks at once from Agenda — see _Can I change several tasks at once?_
 - Emergent marks sync to your other devices.
 
 ### What is Create Alarm?
@@ -60,7 +60,7 @@ Alarms are on iPhone and iPad. Your choice is remembered on the Mac and syncs, b
 
 ### Can I snooze a task until I get somewhere?
 
-Yes. On an overdue task, open the snooze menu and choose **Snooze Location**, then **Until I Arrive** or **Until I Leave**, and pick a saved place. The task moves to a **Waiting for Location** section in Scheduled and stays quiet until you get there, then becomes due right away.
+Yes. On an overdue task, open the snooze menu and choose **Snooze Location**, then **Until I Arrive** or **Until I Leave**, and pick a saved place. The task moves to a **Waiting for Location** section in Agenda and stays quiet until you get there, then becomes due right away.
 
 - Set up your places in **Settings → Snooze → More Options → Location-Based**. Your saved places sync to your other devices.
 - You can also add one there and then: **New Location…** appears under both **Until I Arrive** and **Until I Leave**, and opens the map so you can pick a place without leaving the task. It's saved with your other places when you confirm it, and the task starts waiting for it straight away. It's in the batch snooze menu and the swipe snooze menu too.
@@ -81,7 +81,7 @@ Yes. Open the snooze menu and choose **New Date/Time**, below Location. Set a da
 - **A time only** — the task stays on its own day and moves to that hour.
 - **Both** — the task moves to exactly that moment.
 
-It works on a selection too: select tasks in Scheduled, tap the alarm icon, and choose New Date/Time. Leaving one half out is what makes this useful in bulk — pick a time only, and ten tasks spread across the week each move to that hour on their own day.
+It works on a selection too: select tasks in Agenda, tap the alarm icon, and choose New Date/Time. Leaving one half out is what makes this useful in bulk — pick a time only, and ten tasks spread across the week each move to that hour on their own day.
 
 A task with a date but no time stays that way when you move it to another date; choosing a time is what gives it one. Turn the option off under **Settings → Snooze → More Options → Snooze to Date/Time**.
 
@@ -119,15 +119,15 @@ Tasks with a date but no time work the other way, because your **Default Due Tim
 
 ### What is the Daily Briefing?
 
-One notification each morning at your Default Due Time listing the tasks due that day and how many are overdue. It's skipped on days when nothing is due or overdue. Turn it off in **Settings → Default Due Time → Daily Briefing**.
+One notification each morning at your Default Due Time listing the tasks due that day and how many are overdue. It's skipped on days when nothing is due or overdue. Turn it off in **Settings → Notifications → Daily Briefing**.
 
 ### Where does tapping a notification take me?
 
-To **Scheduled**, with the task near the top. Tapping the body of an alert never completes or changes anything — use the notification's own buttons to snooze or complete.
+To **Agenda**, with the task near the top. Tapping the body of an alert never completes or changes anything — use the notification's own buttons to snooze or complete.
 
 ### What does the number on the app icon count?
 
-Your choice, in **Settings → Appearance → Icon Badge**:
+Your choice, in **Settings → Look & Feel → Icon Badge**:
 
 - **Overdue** — tasks whose time has passed. This is the default.
 - **Due Today** — everything due today, whether or not its time has come.
@@ -137,12 +137,37 @@ All three rise and fall as you add and complete tasks. A task waiting on a place
 
 ### Can I use Due Something in light or dark mode?
 
-Yes — **Settings → Appearance → Appearance**:
+Yes — **Settings → Look & Feel → Appearance**:
 
 - **System Default** — follows your device, which is how it starts.
 - **Light Mode** and **Dark Mode** — the app stays as you set it, whatever the rest of the device is doing.
 
 The change takes effect straight away, including on anything already open. It's one of the settings that can be kept the same on all your devices — see _Can I choose what syncs?_
+
+### Can I change the app icon?
+
+Yes — **Settings → Look & Feel → App Icon**. Besides the default there are Blue, Green, Yellow, Orange, Red, Purple, and Multicolor. The choice belongs to each device rather than syncing, so your iPhone and iPad can differ.
+
+- On iPhone and iPad it changes the Home Screen icon. Notifications can keep showing the previous icon until you restart the device — an iOS issue the app can't work around.
+- On the Mac it changes the Dock icon while Due Something is running. Finder and notifications keep the default icon.
+- The Apple Watch app always uses the default icon.
+
+### What are the small badges on list icons?
+
+They mark what kind of list it is, in the lists drawer (and the Mac sidebar):
+
+- **Calendar** — a list synced with a calendar
+- **Gears** — a smart list
+- **Two people** — a list you've marked **Shared List** in its List Info
+- **Lock** — a list shared with you as view only
+
+Turn a list's badge on or off with **List Type Icon** in its List Info (it only appears when the list has a badge to show). It starts on for synced calendars and view-only lists, and turning on Shared List turns it on; for the rest it starts off.
+
+### Can I change Agenda's icon?
+
+No — it's a calendar page showing today's date, in the drawer, the widget, and on Apple Watch, and turns over at midnight. You can still rename Agenda and change its color in its List Info.
+
+Agenda used to be called **Scheduled**. If you renamed it yourself, your name is kept.
 
 ### Voice dictation isn't working
 
@@ -179,7 +204,7 @@ You can do it for several tasks at once too: select them in a list, tap the shar
 
 ### What is the Mac menu bar item?
 
-A small panel that lives in your menu bar, so Due Something is one click away without switching apps. The icon shows your overdue count, and clicking it opens Scheduled in miniature — the same grouping, with snooze and complete on each task, and a field at the top for adding one.
+A small panel that lives in your menu bar, so Due Something is one click away without switching apps. The icon shows your overdue count, and clicking it opens Agenda in miniature — the same grouping, with snooze and complete on each task, and a field at the top for adding one. A task you complete there stays crossed out for a few seconds, as it does in Agenda, so you can uncheck it.
 
 All of it is under **Settings → Mac Only**:
 
@@ -192,34 +217,73 @@ All of it is under **Settings → Mac Only**:
 
 Yes, in any of them. Open the options menu (the **…** button) and use the filters to show only the tasks you want: **Repeating Task**, **Calendar**, **Links**, **Flagged**, **Emergent**, **Location**, or **Alarm**. Pick more than one to widen the net. Each matches the mark shown on a task's row, so what you filter by is what you can see.
 
-This works in Scheduled, in any of your own lists, in All, in Completed, and in Recently Deleted. Deleted tasks are matched on what was saved with them when they were deleted.
+This works in Agenda, in any of your own lists, in All, in Completed, and in Recently Deleted. Deleted tasks are matched on what was saved with them when they were deleted, and past completions in Completed on the marks the task had when it was completed. Completions from before version 1.4 only match **Repeating Task**.
 
 Turn them all off to go back to everything. Switching lists clears them.
 
+### What happens when I check off a task?
+
+It stays where it is, crossed out, for about five seconds — the same time an Undo lasts — and then leaves the list. Uncheck it before then and it's as if you never checked it. Leaving the list moves it along straight away. Checking off several in a row keeps them all in place until you stop, so nothing shifts under your finger.
+
+This is the same in every list: Agenda, your own lists, All, Flagged, Alarms, Location, smart lists you've made, and the Mac menu bar panel. With VoiceOver or Switch Control on, crossed-out tasks stay until you leave the list, so there's time to reach them.
+
+A repeating task's next date appears straight away, beside the crossed-out one. Unchecking the crossed-out one takes the new date away again.
+
+### Can I see when I last completed a repeating task?
+
+Yes. Open the task: **Last Completed**, just under Repeat, shows when you last finished it. Tap it for every time it's been completed and how many times that is.
+
+Past completions also appear in **Completed** among your other finished tasks, in date order, with a small repeat symbol. A list with **Show Completed** on shows its own, and so does a smart list you've made that includes completed tasks. Tap one to see its details, or swipe it to remove it from your history — which also takes it out of the Due Something Report — with an Undo in case you didn't mean to. Your history syncs across your devices.
+
+Completions from before version 1.4, or made in Apple's Reminders app, are matched to a task by its title and list, so renaming a task leaves its earlier completions out of Last Completed.
+
 ### Can I change several tasks at once?
 
-Yes. Open the options menu (the **…** button) in a list, in Scheduled, or in Completed, and choose **Select**. Tap the tasks you want and a bar appears at the bottom with what you can do to them:
+Yes. Open the options menu (the **…** button) in a list, in Agenda, or in Completed, and choose **Select**. Tap the tasks you want and a bar appears at the bottom with what you can do to them:
 
-- **In any list, and in Scheduled** — snooze (including Smart Presets, a location, or a new date and time), flag, mark Emergent, set a location alert, move to another list, share as a PDF, complete, or delete.
+- **In any list, and in Agenda** — snooze (including Smart Presets, a location, or a new date and time), flag, mark Emergent, set a location alert, move to another list, share as a PDF, complete, or delete.
 - **In Completed and Recently Deleted** — restore or delete.
 
 Snoozing a task that has no date gives it one — the time you snooze it to. Marking an undated task **Emergent** gives it the current date and time, since Emergent only means anything against a deadline. A task that already has a date keeps it.
 
 The bar shows five buttons at a time; if you have more than that turned on, slide it sideways to reach the rest.
 
-Choose which buttons appear at all in **Settings → Look & Feel → Batch Select Options**. Turn one off and it leaves every bar that had it. With all of a list's buttons off, Select leaves that list's menu, since there'd be nothing to do with a selection.
+Choose which buttons appear at all in **Settings → Tasks & Lists → Batch Select Options**. Turn one off and it leaves every bar that had it. With all of a list's buttons off, Select leaves that list's menu, since there'd be nothing to do with a selection.
 
 Tap **Edit** on that screen to drag the buttons into the order you want instead; the checkmark saves it. The order you set is used in every selection bar, whichever way round it's drawn.
 
-Tap the **✕** on the bar to finish. On iPad and Mac, the sidebar button in the top corner turns into an **✕** while you're selecting, which does the same. With a keyboard, **⌘⇧K** completes the selection and **⌘⌫** deletes it. Deletions can be undone from the toast that follows.
+Tap the **✕** on the bar to finish. On iPad and Mac, the sidebar button in the top corner turns into an **✕** while you're selecting, which does the same. With a keyboard, **⌘⇧K** completes the selection and **⌘⌫** deletes it. Completing or deleting a selection can be undone from the toast that follows.
 
 ### Can I change what swiping a task does?
 
-Yes — **Settings → Look & Feel → Customize Swipe**. Each direction has three positions, and you can put Complete, Flag, Emergent, Location, Snooze, Share, Move, or Delete in any of them, or leave a position empty. The one nearest the row's edge is what a full swipe does.
+Yes — **Settings → Tasks & Lists → Swipe Actions**, or **Customize → Swipe Actions** in any list's options menu. Each direction has three positions, and you can put Complete, Flag, Emergent, Location, Snooze, Share, Move, or Delete in any of them, or leave a position empty. The one nearest the row's edge is what a full swipe does.
+
+**Completed** and **Recently Deleted** have their own swipes, set on the same screen: two positions each way, each one **Delete**, **Restore**, or empty. They start with Delete on one side and Restore on the other. A past completion can't be restored, so it only offers Delete.
+
+While a row's swipe buttons are showing, the row is highlighted, so it's clear which task they belong to.
 
 ### Can I turn my calendar events into tasks?
 
-Yes. Go to **Settings → Calendar Connect → Import Events**, pick a calendar, tick the events you want, choose which list they go to, and tap **Add**. Nothing is imported automatically, and your calendar is never changed — importing only ever creates tasks.
+Yes, two ways. Go to **Settings → Calendar Connect → Import/Sync** and pick a calendar, then under **What to Import?** choose:
+
+- **Import Select Events** — tick the events you want, choose which list they go to, and tap **Add**. Only those events become tasks, once; importing never changes your calendar.
+- **Sync Entire Calendar** — makes a list that keeps itself in step with the calendar. See _Can I keep a calendar in sync with a list?_
+
+### Can I keep a calendar in sync with a list?
+
+Yes — choose **Sync Entire Calendar** after picking the calendar. Set how far ahead to sync (3 months, 6 months, or a year), how often to refresh (daily, weekly, or monthly), and **Notify Earlier** if you want tasks due a little before their events. **Edit List Info** sets the new list's name, color, and icon. Then tap **Sync Calendar**.
+
+Each refresh adds new events, updates the titles, notes, links, and dates you haven't changed yourself, and moves tasks whose events were deleted to Recently Deleted. Your own edits to a task are kept. Refreshes happen when the app runs or gets background time after the interval you chose; use **Refresh Now** in the list's List Info to refresh straight away.
+
+- **Repeating events** show one task at a time. Complete it and the next date appears. Deleting one asks **Delete This Occurrence** (the next one appears) or **Delete All Future** (the series stops until you use Restore Calendar).
+- **Tasks you add** to the list go to the calendar too when it's one you can write to, and editing or deleting them changes Calendar. For a repeating one, you're asked whether the change covers just this occurrence or all future ones. A read-only calendar's list keeps tasks you add only in Due Something.
+- **Restore Calendar**, also in List Info, resets imported tasks to match Calendar and brings back removed events within the sync window. Completed tasks and tasks you created yourself are kept.
+- **Show Calendar** in the list's menu adds the pull-down calendar, and the list is grouped by date.
+- **List Info** shows the synced calendar, when it last refreshed, and its settings. If a refresh fails or is waiting for you to confirm removals, a dot appears on the list's icon and a button beside its menu takes you there. Changing a setting refreshes the list a couple of seconds later. **Stop Syncing** either keeps the tasks as a normal list or deletes the list; Calendar is never changed either way.
+
+As a safeguard, if a refresh would remove more than half of a list's tasks at once (at least 5), it asks first — **Remove** sends them to Recently Deleted, **Keep** leaves them as ordinary tasks. A device whose calendar is still downloading, such as a new iPhone, never removes anything on its own. Renaming the calendar in the Calendar app keeps it syncing.
+
+The sync settings and which event each task came from sync through iCloud, so all your devices show the same tasks.
 
 ### Which calendars can I import from?
 
@@ -227,11 +291,11 @@ Yes. Go to **Settings → Calendar Connect → Import Events**, pick a calendar,
 
 ### Why does Due Something ask for Calendar access?
 
-Only for Calendar Connect — reading events so you can import them, and writing an event when you use **Add to Calendar** on a task. Decline it and everything else in the app works exactly as before.
+Only for Calendar Connect — reading events so you can import or sync them, and writing an event when you use **Add to Calendar** on a task or add a task to a list synced with a calendar you can write to. Decline it and everything else in the app works exactly as before.
 
 ### How far ahead do the events go?
 
-Six months by default. Change it under **Import Options → Look Ahead**, anywhere from one month to a year. Events that have already passed are never offered.
+Six months by default. Change it under **Import Options → Look Ahead**, anywhere from one month to a year. Events that have already passed are never offered. A synced calendar has its own setting, **How far in advance to sync**, in its list's List Info.
 
 ### What happens to a monthly task on the 31st?
 
@@ -241,6 +305,8 @@ When you set a task to repeat monthly on the **29th, 30th, or 31st**, Due Someth
 - **Skip Month** — that month is passed over and the next one with the date is used.
 
 New repeats use **Last Day**. Tasks you set up before this choice existed keep behaving as they did, and a task already set to the last day of the month is unchanged.
+
+A repeat you type into the title follows the same rule: typed in September, a monthly repeat on the 31st starts on September 30 rather than waiting for October 31.
 
 The choice travels with the task, so it holds in Reminders, on your other devices, and if the task is archived and restored.
 
@@ -266,7 +332,7 @@ A green calendar icon appears next to the task's title, on iPhone, iPad, Mac, an
 - The task came from a calendar event you imported. Its notes end with a line naming the calendar — _Imported from the "Work" calendar_ — underneath the event's own location and notes.
 - The task writes its own event, through **Add to Calendar** in the task editor.
 
-You can show only these tasks in Scheduled — see _Can I narrow down what Scheduled shows?_
+You can show only these tasks in any list — see _Can I narrow down what a list shows?_
 
 ### Can I put a task on my calendar?
 
@@ -291,20 +357,24 @@ Your tasks and lists already sync through Apple Reminders. Due Something's own e
 - Whether a task has an alarm
 - Calendar events a task has written for itself, through Add to Calendar
 - Attachments
-- List icons, hidden lists, sort order, list order, and manual task order
+- List icons, list type icons, hidden lists, sort order, list order, and manual task order
+- Sublists — their names, icons, and order, and which tasks are in each
+- Smart lists you've made, saved Multi-List layouts, list templates, and review reminders
+- Synced calendars' settings, and which event each task came from
+- Your history of completed tasks
 - Recently Deleted, so you can restore a task from any device
 - Saved places for Snooze Location
 - Which calendar events you've already imported
 - Your Settings, section by section (see the next question)
 
-It's on automatically when you're signed in to iCloud. Changes usually arrive on your other devices within a few seconds while they're awake, or the next time they open. Everything is stored in your private iCloud account and end-to-end encrypted — we have no access to it.
+It's on automatically when you're signed in to iCloud. Changes usually arrive on your other devices within a few seconds while they're awake, or the next time they open. When an update starts syncing something new, each device catches up on it by itself the first time it runs the new version — so something you set before updating still reaches your other devices. Everything is stored in your private iCloud account and end-to-end encrypted — we have no access to it.
 
 ### Can I choose what syncs?
 
 Yes. Go to **Settings → iCloud Sync**.
 
 - **Sync this Device with iCloud** turns syncing on or off for the device you're holding. When it's off, that device keeps everything it has and stops sending or receiving changes; turn it back on to catch up.
-- The switches below it choose which sections of Settings are kept the same on all your devices: Default View, Default List, Default Due Time, Notifications, Snooze, Widgets & Live Activities, Calendar Connect, Appearance, and Sounds & Haptics. Widgets & Live Activities and Sounds & Haptics start off, since they're about how one device shows and plays things. Turn a section off to let each device keep its own settings for it; turn it back on to share the settings of the device you turn it on from. These choices apply to all your devices.
+- The switches below it choose which sections of Settings are kept the same on all your devices: Default View, Default List, Default Due Time, Notifications, Snooze, Widgets, Calendar Connect, Appearance, and Sounds & Haptics. Widgets and Sounds & Haptics start off, since they're about how one device shows and plays things. Turn a section off to let each device keep its own settings for it; turn it back on to share the settings of the device you turn it on from. These choices apply to all your devices.
 - **Restore iCloud Sync Defaults** puts just these switches back to their defaults. It doesn't change your settings themselves.
 
 You can also switch Due Something off entirely under **Settings → \[Your Name\] → iCloud → Saved to iCloud** on iPhone and iPad, or **System Settings → \[Your Name\] → iCloud → Saved to iCloud** on the Mac. The app keeps working from its local data.
@@ -319,7 +389,7 @@ Due Something keeps a list's icon, sort, and visibility with the list by its nam
 
 ### What is the Shelf?
 
-The group at the very top of the sidebar, holding Scheduled to begin with. Put the lists and smart lists you use constantly on it and they stay above everything else.
+The group at the very top of the sidebar, holding Agenda to begin with. Put the lists and smart lists you use constantly on it and they stay above everything else.
 
 - On iPhone and iPad, drag a row across the Shelf's line to move it on or off.
 - On the Mac, right-click a row and choose **Move to The Shelf** or **Remove from The Shelf**.
@@ -341,12 +411,13 @@ Yes. Open **List Info** (or set it while creating the list), and under **Review 
 - List Info then shows when you last reviewed it — **Never** to begin with — and when the next reminder is due.
 - **Mark Reviewed** is in the list's options menu, and updates the last-reviewed date.
 - Tapping the reminder opens that list.
+- When a review is due, a dot appears on the list's icon in the drawer, and a button beside the list's menu marks it reviewed in one tap.
 
-It works for your own lists and for Scheduled, Completed, Recently Deleted, and smart lists you've made.
+It works for your own lists and for Agenda, Completed, Recently Deleted, and smart lists you've made.
 
 For a monthly review on the **29th, 30th, or 31st**, you're asked what should happen in a month without that date: **Last Day** uses the last day the month does have, and **Skip Month** passes it over. New reminders use Last Day unless you change it.
 
-Review reminders stay on the device you set them on — they aren't synced, so set them where you want them.
+Review reminders sync across your devices through iCloud, along with when you last marked each list reviewed. The time you choose is read in each device's own time zone, so a 9:00 AM review reminds you at 9:00 AM wherever you are.
 
 ### Can I show two lists at once?
 
@@ -355,8 +426,8 @@ Yes, on iPad, Mac, and iPhone Duo. Open a list's options menu (the **…** butto
 - The list you're working in is the active one. Tap an inactive list's name to switch to it.
 - Tap the **active** list's name for a menu of everything you could put there instead. The list already open on the other side is greyed out, so you can't have the same one twice.
 - The **✕** next to the active name closes that list and keeps the other.
-- **Select** works across both at once — choose tasks on either side and the bar acts on all of them.
-- Drag a task from one list to the other to move it.
+- **Select** works across both at once — choose tasks on either side and the bar acts on all of them. A selected task that leaves view, say because it was completed on another device while completed tasks are hidden, drops out of the selection, so the bar only ever acts on what you can see.
+- Drag a task from one list to the other to move it — see _Can I drag tasks to reorder or move them?_
 
 Rotating, folding, or resizing the window keeps both lists. If the window becomes too small for two, the one you were working in stays and the other closes.
 
@@ -378,8 +449,8 @@ Tap **Edit Rules** to say what it should show:
 
 - **Source Lists** — which lists to look in.
 - **Due Date** — overdue, today, the next 7 or 30 days, anything with a date, or anything without one.
-- **Completion** — unfinished tasks, finished ones, or both.
-- **Flagged**, **Emergent**, **Repeating**, **Location**, **Alarm**, and **Calendar Association** — the same marks you can filter Scheduled by.
+- **Task Status** — incomplete tasks, completed ones, or either.
+- **Flagged**, **Emergent**, **Repeating**, **Location**, **Alarm**, and **Calendar Association** — the same marks you can filter any list by.
 
 Choose whether a task has to match **every** rule or just **any** of them. You can also give it an icon and a color, sort it by due date or title, hide its header, and pick which real list new tasks added from it should go to.
 
@@ -387,27 +458,57 @@ Smart lists of your own sit in the sidebar with everything else — reorder them
 
 Deleting one removes the view, never the tasks in it.
 
+### What are sublists?
+
+Headings inside a list that group its tasks — say, **Produce** and **Dairy** inside **Groceries**. Each one can be collapsed with a tap on its heading, so a long list stays manageable.
+
+- **Add Sublist** in the list's options menu (the **…** button) asks for a name, an optional icon, and which tasks go in it. Once a list has sublists, the same place says **Manage Sublists**, where you can rename them, change their icons, reorder them, add more, and choose their tasks. Nothing changes until you tap the checkmark.
+- **Deleting a sublist** asks whether to move its tasks back to the main list or delete them along with it.
+- **Moving a task into one**: drag it there (see _Can I drag tasks to reorder or move them?_), pick the sublist in the task editor, or choose it under **Move** when you swipe a task or select several.
+- They work in your own lists, lists shared with you, lists synced with a calendar, and Smart Lists you've made.
+- With the list in **Calendar** view, tasks are shown by date and each one is labeled with its sublist. Search results show it too.
+- A repeating task's next occurrence stays in the same sublist.
+
+Sublists sync across your devices — their names, icons, order, and which tasks are in each. Whether a sublist is collapsed is up to each device.
+
+### Can I drag tasks to reorder or move them?
+
+Yes. Press and hold a task until it lifts, then drag it, on iPhone and iPad:
+
+- **Within a list** — the list opens a space where the task will land, so you can see the new order before you let go.
+- **To the bottom** — past the last task, a line appears instead of a space; let go and the task goes at the end.
+- **Into a sublist** — the whole sublist is outlined while the task is over it, and the space opens inside it. Dropping on a sublist's heading puts the task at the end of that sublist. Drag it out again to put it back in the main list.
+- **To another list** — in Multi-List, drag a task across to the other list to move it there.
+
+Dropping a task at a particular spot switches the list to **Manual** sort so the order you chose sticks; sublists stay where they were. A list synced with a calendar keeps its date order, so a task dropped there goes where its date puts it. Read-only lists don't accept drops, and dragging is off while you're selecting tasks or reordering.
+
+On the Mac, drag tasks within a list using the Mac's own row dragging, or between the two lists in Multi-List.
+
 ### How do I reorder my lists?
 
-On iPhone, open the sidebar's options menu and choose **Reorder Lists**. On iPad, press and hold any row and drag it. Rows can go anywhere — smart lists and your own lists can be mixed in whatever order suits you. The gap partway down the sidebar marks where your own lists begin; drag a row above or below it to move it between the two groups.
+Open the lists drawer and tap **Edit** at the bottom, then drag rows into the order you want and tap **Done**. Rows can go anywhere — smart lists and your own lists can be mixed in whatever order suits you. The Mac sidebar has the same **Edit** button.
+
+While you're editing:
+
+- **＋ Divider** adds a divider line, so you can group lists — up to five. Drag one where you want it, or remove it from its row.
+- A **New Lists Go Here** marker shows where lists you create from now on will appear. Drag it to wherever suits you.
+- The Settings button becomes **Show/Hide Lists**, for choosing which lists and smart lists the drawer shows at all.
 
 ### How do I make a new list on iPad?
 
-Pull down at the top of the sidebar and hold. A **＋** fills in, and letting go opens the new-list sheet. On iPhone, use **New List** in the sidebar's options menu; on the Mac, the **＋** next to "My Lists".
-
-If you use VoiceOver or Switch Control, a **＋** button appears at the top of the iPad sidebar instead, since pull-and-hold is a timed gesture.
+Open the lists drawer and tap **＋ List** at the bottom — the same on iPhone, iPhone Duo, and in the Mac sidebar.
 
 ### Can I give a list its own color?
 
 Yes — **Customize** in any list's options menu. **Header Color** colors the large title at the top, and **List Color** colors the list itself; each is remembered per list and you can set either, both, or neither. **Hide Header** lives in the same place.
 
-It's available in your own lists, in Scheduled, Completed, Recently Deleted, and smart lists you've made. In lists that gather tasks from several places, a small dot in each task's source color shows where it came from.
+It's available in your own lists, in Agenda, Completed, Recently Deleted, and smart lists you've made. In lists that gather tasks from several places, a small dot in each task's source color shows where it came from.
 
 These are display choices on the device you make them on; they don't change the list in Reminders.
 
 ### Can I hide a list's name at the top of the screen?
 
-Yes — **Hide Header Name** in any list's options menu, including Scheduled and Recently Deleted. The list still works exactly the same; only the large title is hidden.
+Yes — **Customize → Hide Header** in any list's options menu, including Agenda and Recently Deleted. The list still works exactly the same; only the large title is hidden.
 
 ### Why does the app ask for Contacts access?
 
@@ -419,10 +520,12 @@ Open Due Something and check the **Recently Deleted** list — deleted reminders
 
 ### How do snooze suggestions work?
 
-**Settings → Snooze → Set Option** decides what you're offered when you snooze:
+**Settings → Snooze → Select Mode** decides what you're offered when you snooze:
 
 - **Static** — the same intervals every time, set by you.
 - **Adaptive** — Short, Medium and Long buckets whose durations drift toward what you actually pick.
+
+A snooze of days, weeks, or months moves the task by the calendar, so a 1-day snooze keeps the same clock time even across a daylight-saving change, and 1 month from January 31 lands on the last day of February.
 
 Adaptive learns from your own past snooze choices using a small model that runs on your device. The history it learns from — when you snoozed and for how long — syncs between your devices through your iCloud account, end-to-end encrypted, so suggestions are the same everywhere. Nothing is sent to us. Turn it off or clear the history in **Settings → Snooze**.
 
@@ -442,7 +545,7 @@ Long-press your Home Screen, tap **＋**, and search for Due Something. Long-pre
 
 ### Can I snooze from the widget?
 
-Yes. Overdue tasks in the Home Screen widget show a snooze button. It pushes the task back by the duration in **Settings → Widgets & Live Activities → Snooze Duration** (10 minutes unless you change it).
+Yes. Overdue tasks in the Home Screen widget show a snooze button. It pushes the task back by the duration in **Settings → Widgets → Snooze Duration** (10 minutes unless you change it).
 
 ### How do I put Due Something on my Lock Screen?
 
@@ -450,7 +553,7 @@ Long-press the Lock Screen, tap **Customize**, tap the widget area, and choose D
 
 ### What is the overdue Live Activity?
 
-When something is overdue, your oldest overdue task can appear on the Lock Screen and in the Dynamic Island with a count of how many more are overdue, plus Snooze and Complete buttons. It's off until you turn it on in **Settings → Widgets & Live Activities → Allow Live Activities**. Once on, it starts the next time you open the app while something is overdue, and ends when nothing is. Live Activities end on their own after eight hours; opening the app starts a fresh one.
+When something is overdue, your oldest overdue task can appear on the Lock Screen and in the Dynamic Island with a count of how many more are overdue, plus Snooze and Complete buttons. It's off until you turn it on in **Settings → Widgets → Live Activities**. Once on, it starts the next time you open the app while something is overdue, and ends when nothing is. Live Activities end on their own after eight hours; opening the app starts a fresh one.
 
 ### Can I add a task from Control Center?
 
@@ -458,9 +561,9 @@ Yes. Open Control Center, tap **＋** in the top corner, tap **Add a Control**, 
 
 ### Is there an Apple Watch app?
 
-Yes. It shows your Scheduled tasks grouped the same way the iPhone does — Overdue, Today, and on through the week — with the list's color beside each one, and Emergent, flag, and calendar marks where they apply.
+Yes. It shows your Agenda tasks grouped the same way the iPhone does — Overdue, Today, and on through the week — with the list's color beside each one, and Emergent, flag, and calendar marks where they apply.
 
-- **Swipe a task to act on it.** Out of the box, swiping left completes it and swiping right snoozes it — see _Can I change what swiping does on my Watch?_ to set them to something else, including Delete.
+- **Swipe a task to act on it.** Out of the box, swiping left completes it and swiping right snoozes it — see _Can I change what swiping does on my Watch?_ to set them to something else, including Delete, or turn one off.
 - **Tap the ＋** at the top to add a task by dictation, scribble, or the keyboard. What you say is read for dates and repeats exactly as typing it into the app would be.
 - Tasks arrive on the Watch through your iCloud account, the same as your other devices. Flags, Emergent marks, and snoozes you set elsewhere show up here too.
 - A task in a list shared with you as view only can't be changed from the Watch, so its swipes are dimmed.
@@ -472,6 +575,8 @@ Yes. When you add a task on the Watch, the Watch works out when it's due from wh
 A task with a time you gave it appears straight away among the others due then, with a small red **Apple Watch** mark beside its name. That mark means it lives on your Watch and nowhere else yet; it goes as soon as your iPhone has the task. Until then you can't complete or snooze it — there's nothing to act on — but you can swipe it to cancel.
 
 A task with no time it could work out has nowhere to sit, so it waits in **Queued for iPhone** instead, with a line saying whether the Watch alert is set. If watchOS won't show alerts — turned off, or set to deliver quietly — that line says so rather than claiming it's scheduled, and a row only says more when there is more to say: that your iPhone has it and is syncing, or that it couldn't be saved at all.
+
+Until then, the Watch alert repeats at your **Default Snooze** interval (**Settings → Notifications** on your iPhone), up to **Number of Alerts** times (**Settings → Apple Watch**).
 
 Once your iPhone has the task and has set up its own alerts for it, the Watch hands over and drops its stand-in, so you're never told twice.
 
@@ -488,12 +593,9 @@ Yes. Swipe the row — wherever it appears, whether among your other tasks or in
 
 Yes, on your iPhone — **Settings → Apple Watch**. The section appears once the Watch app is installed.
 
-**Swipe Options** sets what each direction does. Either one can be **Snooze**, **Complete**, or **Delete**, so you can have the pair you actually use. Delete moves the task to Recently Deleted, the same as deleting it anywhere else, and it's the one action a full swipe won't trigger — you have to tap it, so a long swipe can't throw a task away by accident.
+**Swipe Actions** sets what each direction does: **Snooze**, **Complete**, **Delete**, or **Off** to turn that swipe off. Delete moves the task to Recently Deleted, the same as deleting it anywhere else, and it's the one action a full swipe won't trigger — you have to tap it, so a long swipe can't throw a task away by accident. **Show Action Title** puts the action's name on the button as well as its symbol.
 
-**Snooze Swipe Duration** decides what a snooze swipe does:
-
-- **Open Task** — opens the task so you can pick from the full snooze menu, including Smart Presets. This is how it starts.
-- **Custom…** — snoozes by a fixed amount, anything from 1 minute to 60 hours, without opening anything. Best if you nearly always reach for the same delay.
+**Snooze Swipe Duration** is how long a snooze swipe snoozes for — anything from 1 to 60 minutes or hours (10 minutes unless you change it). The task is snoozed straight away, without opening anything.
 
 These settings travel to your Watch over its direct connection to your iPhone rather than through iCloud, so a change lands the next time the two are connected.
 
@@ -510,7 +612,7 @@ A task you've completed shows as done on the Watch while it waits, so you're nev
 
 Yes, two complications:
 
-- **Scheduled** — your next task and how many more are due. It comes in the circular, corner, rectangular, and inline shapes, so it fits most faces.
+- **Agenda** — your next task and how many more are due. It comes in the circular, corner, rectangular, and inline shapes, so it fits most faces.
 - **New Task** — a single button that opens straight into dictation.
 
 Long-press your watch face, tap **Edit**, choose a complication slot, and pick Due Something. They refresh as your tasks change and when the Watch wakes them.
@@ -541,7 +643,7 @@ Yes. Drag text, a link, or one or more files onto a list and Due Something start
 - The first line of dropped text becomes the title and the rest becomes notes.
 - A link is kept in the notes.
 - Files come in as attachments. Drop several documents together and you get one task carrying all of them.
-- Either side of Multi-List will take a drop; the one under your finger highlights.
+- Either side of Multi-List will take a drop.
 
 The task opens in the editor with everything filled in, so **nothing is saved until you tap Save**. Cancel and the copied files are discarded.
 
@@ -570,7 +672,7 @@ On the Mac, and on iPad with a keyboard: **⌘N** new task, **⌘⇧N** new list
 
 Yes. Every control is labeled for VoiceOver, undo toasts are announced and stay until you act on them, and the app follows Larger Text, Reduce Motion, Increase Contrast, and Differentiate Without Color.
 
-Two notes about gestures that are held rather than tapped. Search is normally opened by pulling down on a list and holding; when VoiceOver, Switch Control, or AssistiveTouch is on, a search button appears in the toolbar instead. The same applies to making a list on iPad — a **＋** button appears at the top of the sidebar in place of the pull-and-hold. With Voice Control, use Siri or a keyboard to search.
+Two notes about gestures that are held rather than tapped. Search is normally opened by pulling down on a list and holding; when VoiceOver, Switch Control, or AssistiveTouch is on, a search button appears in the toolbar instead. With Voice Control, use Siri or a keyboard to search.
 
 ### I left a tip but something went wrong
 

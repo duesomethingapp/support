@@ -215,7 +215,7 @@ All of it is under **Settings → Mac Only**:
 
 ### Can I narrow down what a list shows?
 
-Yes, in any of them. Open the options menu (the **…** button) and use the filters to show only the tasks you want: **Repeating Task**, **Calendar**, **Links**, **Flagged**, **Emergent**, **Location**, or **Alarm**. Pick more than one to widen the net. Each matches the mark shown on a task's row, so what you filter by is what you can see.
+Yes, in any of them. Open the options menu (the **…** button) and choose **Filter**. Switch on the marks you want to see — **Repeating Task**, **Calendar**, **Links**, **Flagged**, **Emergent**, **Location**, or **Alarm** — and the list updates behind as you go; the menu stays open while you pick. Pick more than one to widen the net. While any filter is on, a filter button sits beside **…** so you can change them in one tap. **Clear All** turns them all off and puts the button away (it reads **Close** when none are on). On a Mac, **Filter** is a submenu that closes after each pick. Each matches the mark shown on a task's row, so what you filter by is what you can see.
 
 This works in Agenda, in any of your own lists, in All, in Completed, and in Recently Deleted. Deleted tasks are matched on what was saved with them when they were deleted, and past completions in Completed on the marks the task had when it was completed. Completions from before version 1.4 only match **Repeating Task**.
 
@@ -497,6 +497,10 @@ While you're editing:
 ### How do I make a new list on iPad?
 
 Open the lists drawer and tap **＋ List** at the bottom — the same on iPhone, iPhone Duo, and in the Mac sidebar.
+
+### Can the lists drawer close after I pick a list?
+
+Yes. On iPad and on iPhone Duo's inner display, the drawer stays open after you pick a list, so you can move between lists quickly. Tap the list you're already in, or tap outside the drawer, to close it. If you'd rather it close every time, turn on **Settings → Tasks & Lists → Auto Close Drawer**. The setting is per device. On iPhone and on Duo's front display the drawer always closes after a pick, so the setting isn't shown there.
 
 ### Can I give a list its own color?
 

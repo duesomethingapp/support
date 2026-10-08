@@ -464,10 +464,11 @@ Headings inside a list that group its tasks — say, **Produce** and **Dairy** i
 
 - **Add Sublist** in the list's options menu (the **…** button) asks for a name, an optional icon, and which tasks go in it. Once a list has sublists, the same place says **Manage Sublists**, where you can rename them, change their icons, reorder them, add more, and choose their tasks. Nothing changes until you tap the checkmark.
 - **Deleting a sublist** asks whether to move its tasks back to the main list or delete them along with it.
-- **Moving a task into one**: drag it there (see _Can I drag tasks to reorder or move them?_), pick the sublist in the task editor, or choose it under **Move** when you swipe a task or select several.
+- **Moving a task into one**: drag it there (see _Can I drag tasks to reorder or move them?_), pick the sublist in the task editor, or choose it under **Move** when you swipe a task or select several. Except when you drag it to a particular spot, it joins at the end of the sublist.
 - They work in your own lists, lists shared with you, lists synced with a calendar, and Smart Lists you've made.
 - With the list in **Calendar** view, tasks are shown by date and each one is labeled with its sublist. Search results show it too.
 - A repeating task's next occurrence stays in the same sublist.
+- Restoring a task from **Recently Deleted** puts it back in its sublist, in the place it had, as long as that sublist still exists.
 
 Sublists sync across your devices — their names, icons, order, and which tasks are in each. Whether a sublist is collapsed is up to each device.
 
@@ -500,7 +501,7 @@ Open the lists drawer and tap **＋ List** at the bottom — the same on iPhone,
 
 ### Can the lists drawer close after I pick a list?
 
-Yes. On iPad and on iPhone Duo's inner display, the drawer stays open after you pick a list, so you can move between lists quickly. Tap the list you're already in, or tap outside the drawer, to close it. If you'd rather it close every time, turn on **Settings → Tasks & Lists → Auto Close Drawer**. The setting is per device. On iPhone and on Duo's front display the drawer always closes after a pick, so the setting isn't shown there.
+Yes. On iPad and on iPhone Duo's inner display, the drawer stays open after you pick a list, so you can move between lists quickly. Tap the list you're already in, or tap outside the drawer, to close it. If you'd rather it close every time, turn on **Settings → Tasks & Lists → Auto Close Drawer**. The setting is per device. On iPhone and on Duo's front display the drawer always closes after a pick; on Duo the setting still appears there and applies when you unfold.
 
 ### Can I give a list its own color?
 
